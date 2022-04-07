@@ -375,11 +375,11 @@ a {
 }
 
 @font-face {
-  font-family: georgia-regular;
+  font-family: Georgia;
   src: url(assets/fonts/georgia/georgia-regular.ttf);
 }
 @font-face {
-  font-family: arial-regular;
+  font-family: Arial;
   src: url(assets/fonts/arial/arial-regular.ttf);
 }
 .header {
@@ -483,7 +483,6 @@ a {
 }
 .start_inner_grid .start_content .start_description {
   width: 460px;
-  height: 110px;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -513,6 +512,43 @@ a {
 .start_inner_grid .start_content .button_primary:hover {
   background: #FDDCC4;
   cursor: pointer;
+}
+
+.about {
+  padding-top: 80px;
+}
+.about .about_inner_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 120px;
+}
+.about .about_inner_grid .about_image {
+  justify-self: end;
+}
+.about .about_inner_grid .about_content {
+  justify-self: start;
+  width: 430px;
+}
+.about .about_inner_grid .about_content .about_heading {
+  width: 370px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-bottom: 25px;
+}
+.about .about_inner_grid .about_content .about_description {
+  width: 430px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #4C4C4C;
+  padding-bottom: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

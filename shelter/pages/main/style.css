@@ -460,15 +460,59 @@ a {
   color: #fafafa;
 }
 
-.start_screen {
-  height: 788px;
-  position: absolute;
-  top: 120px;
-}
-.start_screen .inner_grid {
+.start_inner_grid {
   display: grid;
+  position: absolute;
+  top: 180px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 728px;
+}
+.start_inner_grid .start_content {
+  width: 460px;
+  padding-top: 163px;
+}
+.start_inner_grid .start_content .start_heading {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  color: #FFFFFF;
+  width: 310px;
+  padding-bottom: 42px;
+}
+.start_inner_grid .start_content .start_description {
+  width: 460px;
+  height: 110px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #CDCDCD;
+  padding-bottom: 42px;
+}
+.start_inner_grid .start_content .button_primary {
+  padding: 15px 44px;
+  width: 207px;
+  height: 52px;
+  background: #F1CDB3;
+  border-radius: 100px;
+  border: none;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #292929;
+  margin: 10px 0px;
+  transition: 0.5s;
+  margin: 0;
+}
+.start_inner_grid .start_content .button_primary:hover {
+  background: #FDDCC4;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

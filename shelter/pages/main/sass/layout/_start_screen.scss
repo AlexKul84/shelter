@@ -31,24 +31,7 @@
             padding-bottom: 42px;
         }
 
-        .button_primary {
-            padding: 15px 44px;
-            width: 207px;
-            height: 52px;
-            background: #F1CDB3;
-            border-radius: 100px;
-            border: none;
-            font-family: 'Georgia';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 17px;
-            line-height: 130%;
-            letter-spacing: 0.06em;
-            color: #292929;
-            margin: 10px 0px;
-            transition: 0.5s;
-            margin: 0;
-        }
+        @import '../components/button_primary';
 
         .button_primary:hover {
             background: #FDDCC4;

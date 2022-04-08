@@ -1,0 +1,19 @@
+//abstracts
+@import 'sass/abstracts/variables';
+@import 'sass/abstracts/placeholders';
+
+//vendors
+@import 'sass/vendors/normalize';
+
+//base
+@import 'sass/base/base';
+@import 'sass/base/typography';
+
+//layout
+@import 'sass/layout/header';
+@import 'sass/layout/pets';
+@import 'sass/layout/footer';
+
+//components
+@import 'sass/components/arrow';
+@import 'sass/components/button_secondary';

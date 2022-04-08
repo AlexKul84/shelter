@@ -1,7 +1,7 @@
 .header {
     padding-top: 30px;
-    height: 908px;
-    background: $background_gradient;
+    height: 120px;
+    background: $background_white;
 }
 
 .header_inner {
@@ -22,9 +22,8 @@
             line-height: 110%;
             letter-spacing: 0.06em;
             width: 186px;
-            color: #F1CDB3;
+            color: #545454;
         }
-
         .logo_description {
             width: 186px;
             height: 15px;
@@ -35,10 +34,10 @@
             line-height: 15px;
             text-align: center;
             letter-spacing: 0.1em;
-            color: #ffffff;
+            color: #292929;
             padding-top: 10px;
         }
-
+        
         .navigation {
             justify-self: end;
         }
@@ -61,7 +60,7 @@
                 transition: 0.5s;
 
                 .menu_item_link {
-                    color: #CDCDCD;
+                    color: #545454;
                 }
 
             }
@@ -69,19 +68,15 @@
             .menu_item:hover {
                 border-bottom: 3px solid #F1CDB3;
                 .menu_item_link {
-                    color: #fafafa;
+                    color: #292929;
                 }  
             }
 
             .menu_item.active {
                 border-bottom: 3px solid #F1CDB3;
-                .menu_item_link {
-                    color: #fafafa;
-                }  
             }
         }
     }
-
 }
 
 

@@ -399,7 +399,7 @@ a {
   src: url(assets/fonts/arial/arial-regular.ttf);
 }
 .header {
-  padding-top: 60px;
+  padding-top: 30px;
   height: 908px;
   background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
@@ -414,10 +414,7 @@ a {
   grid-template-columns: 1fr 1fr;
   align-items: center;
 }
-.header_inner .grid_header .title_link {
-  display: block;
-}
-.header_inner .grid_header .title_link .logo .logo_title {
+.header_inner .grid_header .logo_title {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -427,7 +424,7 @@ a {
   width: 186px;
   color: #F1CDB3;
 }
-.header_inner .grid_header .title_link .logo .logo_description {
+.header_inner .grid_header .logo_description {
   width: 186px;
   height: 15px;
   font-family: "Arial";

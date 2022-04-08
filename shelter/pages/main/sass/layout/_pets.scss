@@ -21,7 +21,6 @@
         .button_arrow_left, .button_arrow_right {
             justify-self: center;
             align-self: center;
-            @import '../components/arrow';
         }
 
         .pets_slider_content {
@@ -53,7 +52,6 @@
                     color: #545454;
                     padding-bottom: 30px;
                 }
-                @import '../components/button_secondary';
             }
             .cart:hover {
                 background: #ffffff;
@@ -67,7 +65,6 @@
         }
     }
 
-    @import '../components/button_primary';
     .button_primary {
         margin: 0 auto;
     }

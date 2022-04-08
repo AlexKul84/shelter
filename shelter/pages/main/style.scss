@@ -1,0 +1,19 @@
+//abstracts
+@import 'sass/abstracts/variables';
+
+//vendors
+@import 'sass/vendors/normalize';
+
+//base
+@import 'sass/base/base';
+@import 'sass/base/typography';
+
+//layout
+@import 'sass/layout/header';
+@import 'sass/layout/start_screen';
+@import 'sass/layout/about';
+
+//components
+
+//pages
+@import 'sass/pages/main'

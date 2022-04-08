@@ -719,4 +719,74 @@ a {
   color: #545454;
 }
 
+.donation {
+  background-color: #f6f6f6;
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+.donation .donation_inner_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+}
+.donation .donation_inner_grid .donation_image {
+  justify-self: end;
+  align-self: center;
+}
+.donation .donation_inner_grid .donation_content {
+  justify-self: start;
+  align-self: center;
+  width: 430px;
+}
+.donation .donation_inner_grid .donation_content .donation_heading {
+  width: 370px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-bottom: 25px;
+}
+.donation .donation_inner_grid .donation_content .donation_bank {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-bottom: 20px;
+}
+.donation .donation_inner_grid .donation_content .bank_accuont {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  width: 349px;
+  padding: 10px 15px;
+  background: #F1CDB3;
+  border-radius: 9px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.05em;
+  color: #545454;
+}
+.donation .donation_inner_grid .donation_content .donation_description {
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #B2B2B2;
+  padding-top: 20px;
+}
+
 /*# sourceMappingURL=style.css.map */

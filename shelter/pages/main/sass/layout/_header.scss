@@ -1,7 +1,7 @@
 .header {
     padding-top: 60px;
     height: 908px;
-    background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%)
+    background: $background_gradient;
 }
 
 .header_inner {

@@ -1,0 +1,45 @@
+.footer {
+    background: $background_gradient;
+    padding-top: $padding_top;
+
+    .footer_inner_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 160px;
+        
+        
+        .footer_heading {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 130%;
+            letter-spacing: 0.06em;
+            color: #FFFFFF;
+            padding-bottom: 40px;
+            
+        }
+
+        .contacts_wrap {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding-bottom: 40px;
+
+            .contacts_desc {
+                margin-left: 20px;
+
+                .contacts {
+                    font-family: 'Georgia';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 115%;
+                    letter-spacing: 0.06em;
+                    color: #F1CDB3;
+                }
+            }
+
+        }
+    }
+}

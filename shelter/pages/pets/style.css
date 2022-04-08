@@ -479,24 +479,14 @@ a {
   padding-top: 80px;
   padding-bottom: 100px;
 }
-.pets .pets_slider {
+.pets .pets_slider_content {
   display: grid;
-  grid-template-columns: 52px 990px 52px;
-  grid-template-rows: 435px;
-  column-gap: 53px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  column-gap: 40px;
+  row-gap: 30px;
   padding-bottom: 60px;
 }
-.pets .pets_slider .button_arrow_left, .pets .pets_slider .button_arrow_right {
-  justify-self: center;
-  align-self: center;
-}
-.pets .pets_slider .pets_slider_content {
-  display: grid;
-  grid-template-columns: repeat(3, 270px);
-  grid-template-rows: 435px;
-  column-gap: 90px;
-}
-.pets .pets_slider .pets_slider_content .cart {
+.pets .pets_slider_content .cart {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -504,10 +494,10 @@ a {
   border-radius: 9px;
   transition: 0.5s;
 }
-.pets .pets_slider .pets_slider_content .cart .pet_img {
+.pets .pets_slider_content .cart .pet_img {
   padding-bottom: 30px;
 }
-.pets .pets_slider .pets_slider_content .cart .pet_name {
+.pets .pets_slider_content .cart .pet_name {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
@@ -518,16 +508,46 @@ a {
   color: #545454;
   padding-bottom: 30px;
 }
-.pets .pets_slider .pets_slider_content .cart:hover {
+.pets .pets_slider_content .cart .button_secondary {
+  margin-bottom: 30px;
+}
+.pets .pets_slider_content .cart:hover {
   background: #ffffff;
   cursor: pointer;
 }
-.pets .pets_slider .pets_slider_content .cart:hover .button_secondary {
+.pets .pets_slider_content .cart:hover .button_secondary {
   cursor: pointer;
   background-color: #FDDCC4;
 }
-.pets .button_primary {
-  margin: 0 auto;
+.pets .pagination {
+  display: grid;
+  grid-template-columns: repeat(5, 52px);
+  column-gap: 20px;
+  justify-content: center;
+}
+.pets .pagination .button_start, .pets .pagination .button_left, .pets .pagination .button_active, .pets .pagination .buttom_right, .pets .pagination .buttom_end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 25px;
+  width: 52px;
+  height: 52px;
+  box-sizing: border-box;
+  border-radius: 100px;
+  transition: 0.5s;
+}
+.pets .pagination .button_start:hover, .pets .pagination .button_left:hover, .pets .pagination .button_active:hover, .pets .pagination .buttom_right:hover, .pets .pagination .buttom_end:hover {
+  background: #F1CDB3;
+  cursor: pointer;
+}
+.pets .pagination .button_start, .pets .pagination .button_left {
+  border: 2px solid #CDCDCD;
+}
+.pets .pagination .button_active {
+  background: #F1CDB3;
+}
+.pets .pagination .buttom_right, .pets .pagination .buttom_end {
+  border: 2px solid #F1CDB3;
 }
 
 .footer {

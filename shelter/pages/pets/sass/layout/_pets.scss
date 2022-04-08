@@ -11,61 +11,88 @@
         @extend %heading
     }
 
-    .pets_slider {
+    .pets_slider_content {
         display: grid;
-        grid-template-columns: 52px 990px 52px;
-        grid-template-rows: 435px;
-        column-gap: 53px;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        column-gap: 40px;
+        row-gap: 30px;
         padding-bottom: 60px;
 
-        .button_arrow_left, .button_arrow_right {
-            justify-self: center;
-            align-self: center;
-        }
+        .cart {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #fafafa;
+            border-radius: 9px;
+            transition: .5s;
 
-        .pets_slider_content {
-            display: grid;
-            grid-template-columns: repeat(3, 270px);
-            grid-template-rows: 435px;
-            column-gap: 90px;
-
-            .cart {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                background: #fafafa;
-                border-radius: 9px;
-                transition: .5s;
-
-                .pet_img {
-                    padding-bottom: 30px;
-                }
-
-                .pet_name {
-                    font-family: "Georgia";
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 20px;
-                    line-height: 23px;
-                    text-align: center;
-                    letter-spacing: 0.06em;
-                    color: #545454;
-                    padding-bottom: 30px;
-                }
+            .pet_img {
+                padding-bottom: 30px;
             }
-            .cart:hover {
-                background: #ffffff;
+
+            .pet_name {
+                font-family: "Georgia";
+                font-style: normal;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 23px;
+                text-align: center;
+                letter-spacing: 0.06em;
+                color: #545454;
+                padding-bottom: 30px;
+            }
+
+            .button_secondary {
+                margin-bottom: 30px;
+            }
+        }
+    
+        .cart:hover {
+            background: #ffffff;
+            cursor: pointer;
+
+            .button_secondary {
                 cursor: pointer;
-
-                .button_secondary {
-                    cursor: pointer;
-                    background-color: #FDDCC4;
-                }
+                background-color: #FDDCC4;
             }
+        }
+
+    }
+
+    .pagination {
+        display: grid;
+        grid-template-columns: repeat( 5, 52px );
+        column-gap: 20px;
+        justify-content: center;
+
+        .button_start, .button_left, .button_active, .buttom_right, .buttom_end {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 15px 25px;
+            width: 52px;
+            height: 52px;
+            box-sizing: border-box;
+            border-radius: 100px;
+            transition: 0.5s;
+        }
+
+        .button_start:hover, .button_left:hover, .button_active:hover, .buttom_right:hover, .buttom_end:hover {
+            background: #F1CDB3;
+            cursor: pointer;
+        }
+
+        .button_start, .button_left {
+            border: 2px solid #CDCDCD;
+        }
+
+        .button_active {
+            background: #F1CDB3;
+        }
+
+        .buttom_right, .buttom_end {
+            border: 2px solid #F1CDB3;
         }
     }
 
-    .button_primary {
-        margin: 0 auto;
-    }
 }

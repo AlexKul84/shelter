@@ -1,0 +1,21 @@
+.button_secondary {
+    text-align: center;
+    padding: 15px 45px;
+    border: 2px solid #F1CDB3;
+    box-sizing: border-box;
+    border-radius: 100px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #fafafa;
+    transition: .5s;
+}
+
+.button_secondary:hover {
+    cursor: pointer;
+    background-color: #FDDCC4;
+}

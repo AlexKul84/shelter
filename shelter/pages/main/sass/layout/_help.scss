@@ -1,0 +1,45 @@
+.help {
+    background-color: $background_white;
+    padding-top: $padding_top;
+    padding-bottom: $padding_bottom;
+
+    .heading {
+        @extend %heading
+    }
+
+    .help_inner_grid {
+        display: grid;
+        grid-template-rows: auto auto;
+
+        .help_list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 120px;
+            row-gap: 55px;
+            max-width: 1030px;
+            margin: 0 auto;
+
+            .help_item {
+                text-align: center;
+                justify-self: center;
+
+                .help_img {
+                    padding-bottom: 30px;
+                }
+
+                .help_text {
+                    font-family: "Georgia";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 115%;
+                    letter-spacing: 0.06em;
+                    color: #545454;
+                }
+
+            }
+        }
+    }
+
+}

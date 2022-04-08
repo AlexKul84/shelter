@@ -1,5 +1,6 @@
 //abstracts
 @import 'sass/abstracts/variables';
+@import 'sass/abstracts/placeholders';
 
 //vendors
 @import 'sass/vendors/normalize';
@@ -12,8 +13,7 @@
 @import 'sass/layout/header';
 @import 'sass/layout/start_screen';
 @import 'sass/layout/about';
+@import 'sass/layout/pets';
+@import 'sass/layout/help';
 
 //components
-
-//pages
-@import 'sass/pages/main'

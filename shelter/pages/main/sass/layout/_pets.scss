@@ -1,0 +1,74 @@
+.pets_inner_grid {
+    display: grid;
+}
+
+.pets {
+    background-color: $background_dark;
+    padding-top: $padding_top;
+    padding-bottom: $padding_bottom;
+
+    .heading {
+        @extend %heading
+    }
+
+    .pets_slider {
+        display: grid;
+        grid-template-columns: 52px 990px 52px;
+        grid-template-rows: 435px;
+        column-gap: 53px;
+        padding-bottom: 60px;
+
+        .button_arrow_left, .button_arrow_right {
+            justify-self: center;
+            align-self: center;
+            @import '../components/arrow';
+        }
+
+        .pets_slider_content {
+            display: grid;
+            grid-template-columns: repeat(3, 270px);
+            grid-template-rows: 435px;
+            column-gap: 90px;
+
+            .cart {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background: #fafafa;
+                border-radius: 9px;
+                transition: .5s;
+
+                .pet_img {
+                    padding-bottom: 30px;
+                }
+
+                .pet_name {
+                    font-family: "Georgia";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 23px;
+                    text-align: center;
+                    letter-spacing: 0.06em;
+                    color: #545454;
+                    padding-bottom: 30px;
+                }
+                @import '../components/button_secondary';
+            }
+            .cart:hover {
+                background: #ffffff;
+                cursor: pointer;
+
+                .button_secondary {
+                    cursor: pointer;
+                    background-color: #FDDCC4;
+                }
+            }
+        }
+    }
+
+    @import '../components/button_primary';
+    .button_primary {
+        margin: 0 auto;
+    }
+}

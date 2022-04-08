@@ -558,6 +558,7 @@ a {
 .about {
   background-color: #ffffff;
   padding-top: 80px;
+  padding-bottom: 100px;
 }
 
 .about .about_inner_grid {
@@ -577,6 +578,9 @@ a {
 .about .about_inner_grid .about_content {
   -ms-grid-column-align: start;
       justify-self: start;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   width: 430px;
 }
 

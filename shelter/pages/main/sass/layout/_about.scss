@@ -1,6 +1,7 @@
 .about {
-    background-color: #ffffff;
+    background-color: $background_white;
     padding-top: $padding_top;
+    padding-bottom: $padding_bottom; 
     .about_inner_grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -12,6 +13,7 @@
 
         .about_content {
             justify-self: start;
+            align-self: center;
             width: 430px;
 
             .about_heading {

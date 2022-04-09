@@ -480,8 +480,9 @@ a {
   display: grid;
   position: absolute;
   top: 149px;
-  grid-template-columns: 37vw 53vw;
+  grid-template-columns: 36vw 53vw;
   grid-template-rows: 728px;
+  column-gap: 12px;
 }
 .start_inner_grid .start_content {
   width: 460px;
@@ -746,7 +747,8 @@ a {
   column-gap: 160px;
 }
 .footer .footer_inner_grid .footer_contacts {
-  align-self: center;
+  align-self: start;
+  padding-top: 28px;
 }
 .footer .footer_inner_grid .footer_contacts .footer_heading {
   font-family: "Georgia";
@@ -765,7 +767,7 @@ a {
   padding-bottom: 36px;
 }
 .footer .footer_inner_grid .footer_contacts .contacts_wrap .contacts_desc {
-  margin-left: 7px;
+  margin-left: 6px;
 }
 .footer .footer_inner_grid .footer_contacts .contacts_wrap .contacts_desc .contacts {
   font-family: "Georgia";
@@ -777,7 +779,8 @@ a {
   color: #F1CDB3;
 }
 .footer .footer_inner_grid .footer_adress {
-  align-self: center;
+  align-self: start;
+  padding-top: 28px;
 }
 .footer .footer_inner_grid .footer_adress .footer_heading {
   font-family: "Georgia";
@@ -787,7 +790,7 @@ a {
   line-height: 130%;
   letter-spacing: 0.06em;
   color: #FFFFFF;
-  padding-bottom: 33px;
+  padding-bottom: 31px;
 }
 .footer .footer_inner_grid .footer_adress .contacts_wrap {
   display: flex;
@@ -796,7 +799,7 @@ a {
   padding-bottom: 32px;
 }
 .footer .footer_inner_grid .footer_adress .contacts_wrap .contacts_desc {
-  margin-left: 7px;
+  margin-left: 5px;
 }
 .footer .footer_inner_grid .footer_adress .contacts_wrap .contacts_desc .contacts {
   font-family: "Georgia";

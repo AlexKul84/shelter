@@ -5,18 +5,18 @@
 .pets {
     background-color: $background_dark;
     padding-top: $padding_top;
-    padding-bottom: $padding_bottom;
+    padding-bottom: 100px;
 
     .heading {
-        @extend %heading
+        @include heading(404px, 58px)
     }
 
     .pets_slider_content {
         display: grid;
         grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
         column-gap: 40px;
-        row-gap: 30px;
-        padding-bottom: 60px;
+        row-gap: 28px;
+        padding-bottom: 57px;
 
         .cart {
             display: flex;
@@ -27,7 +27,7 @@
             transition: .5s;
 
             .pet_img {
-                padding-bottom: 30px;
+                padding-bottom: 26px;
             }
 
             .pet_name {
@@ -39,7 +39,7 @@
                 text-align: center;
                 letter-spacing: 0.06em;
                 color: #545454;
-                padding-bottom: 30px;
+                padding-bottom: 28px;
             }
 
             .button_secondary {
@@ -69,12 +69,22 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding: 15px 25px;
+            padding: 13px 11px;
             width: 52px;
             height: 52px;
             box-sizing: border-box;
             border-radius: 100px;
             transition: 0.5s;
+
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 115%;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            letter-spacing: 0.06em;
         }
 
         .button_start:hover, .button_left:hover, .button_active:hover, .buttom_right:hover, .buttom_end:hover {
@@ -84,6 +94,7 @@
 
         .button_start, .button_left {
             border: 2px solid #CDCDCD;
+            color: #CDCDCD;
         }
 
         .button_active {
@@ -92,6 +103,11 @@
 
         .buttom_right, .buttom_end {
             border: 2px solid #F1CDB3;
+        }
+
+        .button_start {
+
+            
         }
     }
 

@@ -449,7 +449,7 @@ a {
 .header_inner .grid_header .navigation_grid .menu_item:hover {
   border-bottom: 3px solid #F1CDB3;
 }
-.header_inner .grid_header .navigation_grid .menu_item:hover .menu_item_link {
+.header_inner .grid_header .navigation_grid .menu_item_link:hover {
   color: #292929;
 }
 .header_inner .grid_header .navigation_grid .menu_item.active {
@@ -547,7 +547,7 @@ a {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.pets .pagination .button_start:hover, .pets .pagination .button_left:hover, .pets .pagination .button_active:hover, .pets .pagination .buttom_right:hover, .pets .pagination .buttom_end:hover {
+.pets .pagination .buttom_right:hover, .pets .pagination .buttom_end:hover {
   background: #F1CDB3;
   cursor: pointer;
 }
@@ -561,6 +561,7 @@ a {
 .pets .pagination .buttom_right, .pets .pagination .buttom_end {
   border: 2px solid #F1CDB3;
 }
+
 .footer {
   background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   padding-top: 30px;

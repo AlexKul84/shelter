@@ -69,10 +69,11 @@
 
             .menu_item:hover {
                 border-bottom: 3px solid #F1CDB3;
-                .menu_item_link {
-                    color: #292929;
-                }  
             }
+
+            .menu_item_link:hover {
+                color: #292929;
+            }  
 
             .menu_item.active {
                 border-bottom: 3px solid #F1CDB3;

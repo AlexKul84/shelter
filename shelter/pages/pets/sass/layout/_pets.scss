@@ -87,7 +87,7 @@
             letter-spacing: 0.06em;
         }
 
-        .button_start:hover, .button_left:hover, .button_active:hover, .buttom_right:hover, .buttom_end:hover {
+        .buttom_right:hover, .buttom_end:hover {
             background: #F1CDB3;
             cursor: pointer;
         }
@@ -103,11 +103,6 @@
 
         .buttom_right, .buttom_end {
             border: 2px solid #F1CDB3;
-        }
-
-        .button_start {
-
-            
         }
     }
 

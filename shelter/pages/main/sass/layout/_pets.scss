@@ -16,7 +16,7 @@
         grid-template-columns: 52px 990px 52px;
         grid-template-rows: 435px;
         column-gap: 53px;
-        padding-bottom: 60px;
+        padding-bottom: 58px;
 
         .button_arrow_left, .button_arrow_right {
             justify-self: center;
@@ -28,6 +28,7 @@
             grid-template-columns: repeat(3, 270px);
             grid-template-rows: 435px;
             column-gap: 90px;
+            margin-left: 2px;
 
             .cart {
                 display: flex;
@@ -38,7 +39,7 @@
                 transition: .5s;
 
                 .pet_img {
-                    padding-bottom: 30px;
+                    padding-bottom: 23px;
                 }
 
                 .pet_name {
@@ -50,7 +51,7 @@
                     text-align: center;
                     letter-spacing: 0.06em;
                     color: #545454;
-                    padding-bottom: 30px;
+                    padding-bottom: 29px;
                 }
             }
             .cart:hover {

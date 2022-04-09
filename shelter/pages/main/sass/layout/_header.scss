@@ -1,6 +1,6 @@
 .header {
     padding-top: 30px;
-    height: 908px;
+    height: 877px;
     background: $background_gradient;
 }
 
@@ -41,6 +41,8 @@
 
         .navigation {
             justify-self: end;
+            align-self: end;
+            margin-bottom: 8px;
         }
         
         .navigation_grid {

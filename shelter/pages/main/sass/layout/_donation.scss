@@ -1,16 +1,18 @@
 .donation {
     background-color: $background_dark;
     padding-top: $padding_top;
-    padding-bottom: $padding_bottom; 
+    padding-bottom: 99px; 
 
     .donation_inner_grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 30px;
+        grid-template-columns: 48vw 38vw;
+        column-gap: 24px;
         
         .donation_image {
             justify-self: end;
-            align-self: center;
+            align-self: start;
+            padding-top: 12px;
+            padding-right: 6px;
         }
 
         .donation_content {
@@ -19,15 +21,15 @@
             width: 430px;
 
             .donation_heading {
-                width: 370px;
-                font-family: 'Georgia';
+                width: 290px;
+                font-family: "Georgia";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 35px;
                 line-height: 130%;
                 letter-spacing: 0.06em;
                 color: #545454;
-                padding-bottom: 25px;
+                padding-bottom: 21px;
             }
 
             .donation_bank {
@@ -48,16 +50,20 @@
                 align-items: center;
                 gap: 15px;
                 width: 349px;
-                padding: 10px 15px;
+                padding: 10px 14px 10px 15px;
                 background: #F1CDB3;
                 border-radius: 9px;
-                font-family: "Georgia";
-                font-style: normal;
-                font-weight: 400;
-                font-size: 20px;
-                line-height: 115%;
-                letter-spacing: 0.05em;
-                color: #545454;
+
+                .account_number {
+                    font-family: "Georgia";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 115%;
+                    letter-spacing: 0.06em;
+                    color: #545454;
+                }
+
             }
 
             .donation_description {
@@ -70,6 +76,7 @@
                 align-items: center;
                 color: #B2B2B2;
                 padding-top: 20px;
+                width: 360px;
             }
         }
     }

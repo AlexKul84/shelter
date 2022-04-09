@@ -2,13 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 15px 25px;
+    padding: 16px 25px;
     width: 52px;
     height: 52px;
     border: 2px solid #F1CDB3;
     box-sizing: border-box;
     border-radius: 100px;
-    transition: .5s;
+    transition: 0.5s;
+    margin-bottom: 3px;
+    margin-left: 3px;
 }
 
 .arrow:hover {

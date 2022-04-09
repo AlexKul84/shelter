@@ -1,11 +1,11 @@
 .about {
     background-color: $background_white;
     padding-top: $padding_top;
-    padding-bottom: $padding_bottom; 
+    padding-bottom: 96px; 
     .about_inner_grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        column-gap: 120px;
+        grid-template-columns: 35vw 1fr;
+        column-gap: 119px;
         
         .about_image {
             justify-self: end;
@@ -13,8 +13,9 @@
 
         .about_content {
             justify-self: start;
-            align-self: center;
+            align-self: start;
             width: 430px;
+            padding-top: 15px;
 
             .about_heading {
                 width: 370px;
@@ -25,18 +26,17 @@
                 line-height: 130%;
                 letter-spacing: 0.06em;
                 color: #545454;
-                padding-bottom: 25px;
             }
 
             .about_description {
                 width: 430px;
-                font-family: 'Arial';
+                font-family: "Arial";
                 font-style: normal;
                 font-weight: 400;
                 font-size: 15px;
                 line-height: 160%;
                 color: #4C4C4C;
-                padding-bottom: 25px;
+                padding-top: 24px;
             }
         }
     }

@@ -1,4 +1,4 @@
-%heading {
+@mixin heading($heading_width) {
     font-family: "Georgia";
     font-style: normal;
     font-weight: 400;
@@ -10,7 +10,7 @@
     letter-spacing: 0.06em;
     color: #545454;
     margin: 0 auto;
-    width: 403px;
+    width: $heading_width;
     padding-bottom: 60px;
     padding-left: 3px;
 }

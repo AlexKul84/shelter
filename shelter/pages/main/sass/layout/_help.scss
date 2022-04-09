@@ -4,7 +4,7 @@
     padding-bottom: $padding_bottom;
 
     .heading {
-        @extend %heading
+        @include heading(314px)
     }
 
     .help_inner_grid {
@@ -25,7 +25,7 @@
                 justify-self: center;
 
                 .help_img {
-                    padding-bottom: 30px;
+                    padding-bottom: 25px;
                 }
 
                 .help_text {

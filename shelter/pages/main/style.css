@@ -400,8 +400,8 @@ a {
   src: url(assets/fonts/arial/arial-regular.ttf);
 }
 .header {
-  padding-top: 30px;
-  height: 877px;
+  padding-top: 60px;
+  height: 908px;
   background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
 }
 
@@ -479,10 +479,10 @@ a {
 .start_inner_grid {
   display: grid;
   position: absolute;
-  top: 149px;
-  grid-template-columns: 36vw 53vw;
+  top: 181px;
+  grid-template-columns: 38% 1fr;
   grid-template-rows: 728px;
-  column-gap: 41px;
+  column-gap: 45px;
 }
 .start_inner_grid .start_content {
   width: 460px;

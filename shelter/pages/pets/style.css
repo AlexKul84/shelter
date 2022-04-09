@@ -395,7 +395,7 @@ a {
 }
 .header_inner .grid_header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 17vw 76.6vw;
   align-items: center;
 }
 .header_inner .grid_header .logo_title {

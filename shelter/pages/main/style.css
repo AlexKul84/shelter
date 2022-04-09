@@ -412,7 +412,7 @@ a {
 }
 .header_inner .grid_header {
   display: grid;
-  grid-template-columns: 17vw 76.6vw;
+  grid-template-columns: 20% 79.8%;
   align-items: center;
 }
 .header_inner .grid_header .logo_title {
@@ -516,7 +516,7 @@ a {
 }
 .about .about_inner_grid {
   display: grid;
-  grid-template-columns: 37vw 1fr;
+  grid-template-columns: 39.6% 1fr;
   column-gap: 121px;
 }
 .about .about_inner_grid .about_image {
@@ -668,7 +668,7 @@ a {
 }
 .donation .donation_inner_grid {
   display: grid;
-  grid-template-columns: 51vw 38vw;
+  grid-template-columns: 54.5% 1fr;
   column-gap: 24px;
 }
 .donation .donation_inner_grid .donation_image {

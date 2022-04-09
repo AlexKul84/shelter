@@ -2,9 +2,9 @@
     display: grid;
     position: absolute;
     top: 149px;
-    grid-template-columns: 36vw 53vw;
+    grid-template-columns: 38% 1fr;
     grid-template-rows: 728px;
-    column-gap: 41px;
+    column-gap: 45px;
 
     .start_content {
         width: 460px;

@@ -5,7 +5,7 @@
 
     .donation_inner_grid {
         display: grid;
-        grid-template-columns: 51vw 38vw;
+        grid-template-columns: 54.5% 1fr;
         column-gap: 24px;
         
         .donation_image {

@@ -2,10 +2,11 @@
     background-color: $background_white;
     padding-top: $padding_top;
     padding-bottom: 96px; 
+
     .about_inner_grid {
         display: grid;
-        grid-template-columns: 35vw 1fr;
-        column-gap: 119px;
+        grid-template-columns: 37vw 1fr;
+        column-gap: 121px;
         
         .about_image {
             justify-self: end;

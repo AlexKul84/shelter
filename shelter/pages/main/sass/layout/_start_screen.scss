@@ -2,8 +2,9 @@
     display: grid;
     position: absolute;
     top: 149px;
-    grid-template-columns: 37vw 53vw;
+    grid-template-columns: 36vw 53vw;
     grid-template-rows: 728px;
+    column-gap: 12px;
 
     .start_content {
         width: 460px;

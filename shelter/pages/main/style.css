@@ -415,6 +415,9 @@ a {
   grid-template-columns: 20% 79.8%;
   align-items: center;
 }
+.header_inner .grid_header .title_link {
+  display: block;
+}
 .header_inner .grid_header .logo_title {
   font-family: "Georgia";
   font-style: normal;
@@ -597,6 +600,9 @@ a {
   letter-spacing: 0.06em;
   color: #545454;
   padding-bottom: 29px;
+}
+.pets .pets_slider .pets_slider_content .cart a {
+  pointer-events: none;
 }
 .pets .pets_slider .pets_slider_content .cart:hover {
   background: #ffffff;

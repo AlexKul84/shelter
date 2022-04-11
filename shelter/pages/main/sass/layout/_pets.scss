@@ -53,6 +53,10 @@
                     color: #545454;
                     padding-bottom: 29px;
                 }
+                
+                a {
+                    pointer-events: none;
+                }
             }
             .cart:hover {
                 background: #ffffff;

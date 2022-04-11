@@ -82,5 +82,24 @@
         .footer_image {
             align-self: end;
         }
+        @media (max-width: 1279px) {
+            .footer_image {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                justify-self: center;
+
+            }
+        }
+    }
+    @media (max-width: 1279px) {
+        .footer_inner_grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 325px;
+            justify-content: center;
+            margin: 0 34px;
+            column-gap: 60px;
+            row-gap: 65px;
+        }
     }
 }

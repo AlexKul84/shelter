@@ -68,6 +68,26 @@
                 }
             }
         }
+
+        @media (max-width: 1279px) {  
+            .pets_slider_content {
+                grid-template-columns: repeat(2, 270px);
+                column-gap: 40px;
+                margin-left: 0;
+                .last_cart {
+                    display: none;
+                }
+            }
+        }
+    }
+    @media (max-width: 1279px) {  
+        .pets_slider {
+            display: grid;
+            grid-template-columns: 52px auto 52px;
+            grid-template-rows: 435px;
+            column-gap: 12px;
+            padding-bottom: 58px;
+        }
     }
 
     .button_primary {

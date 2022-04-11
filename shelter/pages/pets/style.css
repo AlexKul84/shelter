@@ -512,6 +512,7 @@ a {
 }
 .pets .pets_slider_content .cart .button_secondary {
   margin-bottom: 30px;
+  pointer-events: none;
 }
 .pets .pets_slider_content .cart:hover {
   background: #ffffff;

@@ -73,6 +73,7 @@
             .pets_slider_content {
                 grid-template-columns: repeat(2, 270px);
                 column-gap: 40px;
+                justify-content: center;
                 margin-left: 0;
                 .last_cart {
                     display: none;

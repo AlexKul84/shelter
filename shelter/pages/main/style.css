@@ -678,6 +678,7 @@ a {
   .pets .pets_slider .pets_slider_content {
     grid-template-columns: repeat(2, 270px);
     column-gap: 40px;
+    justify-content: center;
     margin-left: 0;
   }
   .pets .pets_slider .pets_slider_content .last_cart {
@@ -778,6 +779,13 @@ a {
   padding-top: 12px;
   padding-right: 6px;
 }
+@media (max-width: 1279px) {
+  .donation .donation_inner_grid .donation_image {
+    justify-self: center;
+    align-self: center;
+    grid-row: 2;
+  }
+}
 .donation .donation_inner_grid .donation_content {
   justify-self: start;
   align-self: center;
@@ -835,6 +843,21 @@ a {
   color: #B2B2B2;
   padding-top: 20px;
   width: 360px;
+}
+@media (max-width: 1279px) {
+  .donation .donation_inner_grid .donation_content {
+    justify-self: center;
+    grid-row: 1;
+    gap: 80px;
+  }
+}
+@media (max-width: 1279px) {
+  .donation .donation_inner_grid {
+    grid-auto-flow: dense;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    gap: 60px;
+  }
 }
 
 .footer {
@@ -913,6 +936,24 @@ a {
 }
 .footer .footer_inner_grid .footer_image {
   align-self: end;
+}
+@media (max-width: 1279px) {
+  .footer .footer_inner_grid .footer_image {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: center;
+  }
+}
+@media (max-width: 1279px) {
+  .footer .footer_inner_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 325px;
+    justify-content: center;
+    margin: 0 34px;
+    column-gap: 60px;
+    row-gap: 65px;
+  }
 }
 
 .arrow {

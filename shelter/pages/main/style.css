@@ -399,10 +399,13 @@ a {
   font-family: Arial;
   src: url(assets/fonts/arial/arial-regular.ttf);
 }
+.header_wrapper {
+  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+}
+
 .header {
   padding-top: 60px;
-  height: 908px;
-  background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
+  height: 180px;
 }
 
 .header_inner {
@@ -481,8 +484,6 @@ a {
 
 .start_inner_grid {
   display: grid;
-  position: absolute;
-  top: 181px;
   grid-template-columns: 38% 1fr;
   grid-template-rows: 728px;
   column-gap: 45px;

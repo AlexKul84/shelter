@@ -725,6 +725,7 @@ a {
 .help .help_inner_grid .help_list {
   display: flex;
   justify-content: center;
+  justify-items: center;
   flex-wrap: wrap;
   column-gap: 120px;
   row-gap: 55px;
@@ -746,6 +747,19 @@ a {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #545454;
+}
+@media (max-width: 1279px) {
+  .help .help_inner_grid .help_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    justify-content: center;
+    justify-items: center;
+    column-gap: 60px;
+    row-gap: 55px;
+    max-width: 1030px;
+    margin: 0 auto;
+  }
 }
 
 .donation {

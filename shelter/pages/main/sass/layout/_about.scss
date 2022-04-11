@@ -12,14 +12,21 @@
             justify-self: end;
         }
 
+        @media (max-width: 1279px) {
+            .about_image {
+                justify-self: center;
+                grid-row: 2;
+            }
+        }
+
         .about_content {
             justify-self: start;
             align-self: start;
-            width: 430px;
+            max-width: 430px;
             padding-top: 15px;
 
             .about_heading {
-                width: 370px;
+                max-width: 370px;
                 font-family: 'Georgia';
                 font-style: normal;
                 font-weight: 400;
@@ -30,7 +37,7 @@
             }
 
             .about_description {
-                width: 430px;
+                max-width: 430px;
                 font-family: "Arial";
                 font-style: normal;
                 font-weight: 400;
@@ -39,6 +46,28 @@
                 color: #4C4C4C;
                 padding-top: 24px;
             }
+        }
+        @media (max-width: 1279px) {
+            .about_content {
+                justify-self: center;
+                grid-row: 1;
+                padding-top: 0;
+                gap: 80px;
+                max-width: 437px;
+
+                .about_description {
+                    max-width: 437px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1279px) {
+        .about_inner_grid {
+            grid-auto-flow: dense;
+            grid-template-columns: auto;
+            grid-template-rows: auto auto;
+            gap: 100px;
         }
     }
 }

@@ -19,6 +19,17 @@
             padding-bottom: 42px;
         }
 
+        @media (max-width: 767px) {
+            .start_heading {
+                font-size: 25px;
+                text-align: center;
+                align-self: center;
+                letter-spacing: 0.06em;
+                max-width: 262px;
+                margin: 0 auto;
+            }
+        }
+
         .start_description {
             max-width: 460px;
             font-family: 'Arial';
@@ -42,6 +53,12 @@
         }
     }
 
+    @media (max-width: 767px) {
+        .start_content {
+            text-align: center;
+        }
+    }
+
     .start_image {
         max-width: 698px;
         max-height: 728px;
@@ -56,6 +73,22 @@
             justify-self: end;
             max-width: 569px;
             max-height: 593px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        .start_image {
+            max-height: 584px;
+        }
+    }
+    @media (max-width: 375px) {
+        .start_image {
+            max-height: 370px;
+        }
+    }
+    @media (max-width: 320px) {
+        .start_image {
+            max-height: 313px;
         }
     }
 

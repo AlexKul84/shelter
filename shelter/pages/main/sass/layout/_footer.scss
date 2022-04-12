@@ -102,6 +102,13 @@
 
             }
         }
+        @media (max-width: 767px) {
+            .footer_image {
+                grid-column-start: 1;
+                grid-column-end: 2;
+                justify-self: center;
+            }
+        }
     }
     @media (max-width: 1279px) {
         .footer_inner_grid {
@@ -112,6 +119,11 @@
             margin: 0 34px;
             column-gap: 35px;
             row-gap: 0px;
+        }
+    }
+    @media (max-width: 767px) {
+        .footer_inner_grid {
+            grid-template-columns: 1fr;
         }
     }
 }

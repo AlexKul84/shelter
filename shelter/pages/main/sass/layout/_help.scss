@@ -6,6 +6,12 @@
     .heading {
         @include heading(314px)
     }
+    @media (max-width: 767px) {
+        .heading {
+            font-size: 25px;
+            max-width: 274px;
+        }
+    }
 
     .help_inner_grid {
         display: grid;
@@ -38,6 +44,11 @@
                     letter-spacing: 0.06em;
                     color: #545454;
                 }
+                @media (max-width: 767px) {
+                    .help_text {
+                        font-size: 15px;
+                    }
+                }
             }
         }
 
@@ -46,6 +57,19 @@
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-template-rows: repeat(3, auto);
+                justify-content: center;
+                justify-items: center;
+                column-gap: 64px;
+                row-gap: 55px;
+                max-width: 1030px;
+                margin: 0 auto;
+            }   
+        }
+        @media (max-width: 767px) {
+            .help_list {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(4, auto);
                 justify-content: center;
                 justify-items: center;
                 column-gap: 64px;

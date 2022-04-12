@@ -1,8 +1,8 @@
 .start_inner_grid {
     display: grid;
-    grid-template-columns: 38% 1fr;
+    grid-template-columns: 39% 1fr;
     grid-template-rows: 728px;
-    column-gap: 45px;
+    column-gap: 31px;
 
     .start_content {
         max-width: 460px;
@@ -33,8 +33,12 @@
 
     @media (max-width: 1279px) {
         .start_content {
-            padding-top: 60px;
+            padding-top: 0;
             justify-self: center;
+            display: grid;
+            .button_primary {
+                justify-self: center;
+            }
         }
     }
 
@@ -50,6 +54,8 @@
     @media (max-width: 1279px) {
         .start_image {
             justify-self: end;
+            max-width: 569px;
+            max-height: 593px;
         }
     }
 

@@ -10,7 +10,7 @@
         
         .footer_contacts {
             align-self: start;
-                padding-top: 28px;
+            padding-top: 28px;
 
             .footer_heading {
                 font-family: 'Georgia';
@@ -41,6 +41,11 @@
                         color: #F1CDB3;
                     }
                 }
+            }
+        }
+        @media (max-width: 1279px) {
+            .footer_contacts {
+                padding-top: 0;
             }
         }
 
@@ -79,6 +84,13 @@
                 }
             }
         }
+
+        @media (max-width: 1279px) {
+            .footer_adress {
+                padding-top: 0;
+            }
+        }
+
         .footer_image {
             align-self: end;
         }
@@ -95,11 +107,11 @@
         .footer_inner_grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 325px;
+            grid-template-rows: 299px;
             justify-content: center;
             margin: 0 34px;
-            column-gap: 60px;
-            row-gap: 65px;
+            column-gap: 35px;
+            row-gap: 0px;
         }
     }
 }

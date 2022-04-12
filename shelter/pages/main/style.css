@@ -687,9 +687,8 @@ a {
 }
 @media (max-width: 1279px) {
   .pets .pets_slider {
-    display: grid;
-    grid-template-columns: 52px auto 52px;
-    grid-template-rows: 435px;
+    grid-template-columns: 52px 580px 52px;
+    justify-content: center;
     column-gap: 12px;
     padding-bottom: 58px;
   }

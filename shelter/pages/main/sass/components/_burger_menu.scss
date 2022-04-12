@@ -7,31 +7,31 @@
     overflow-x: hidden;
     z-index: 0;
     height: 1024px;
-    width: 620px;
-    top: 0;
-    right: 0;
-    transition: .5s;
+    width: 320px;
+    top: -30px;
+    right: -10px;
+    transition: 0.5s;
 }
 
 .menu_container.open {
-    top: 0;
+    top: -30px;
     height: 1024px;
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
-    right: 0;
+    right: -10px;
     z-index: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .hamburger {
         display: block;
         z-index: 1;
-        margin-right: 3px;
-        margin-bottom: 2px;
+        width: 30px;
+        justify-self: end;
     }
 
     .hamburger.open {
         position: absolute;
-        right: 56px;
+        right: 2px;
         z-index: 1;
     }
 
@@ -41,7 +41,7 @@
 }
 
 .hamburger .line{
-    width: 50px;
+    width: 30px;
     height: 3px;
     background-color: #ffffff;
     display: block;
@@ -50,14 +50,14 @@
 }
 
 .hamburger.open .line {
-    width: 61px;
+    width: 30px;
 }
 
 .menu_container {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navigation {
         display: none;
     }
@@ -70,41 +70,83 @@
     .hamburger_menu {
         display: flex;
         flex-direction: column;
-        width: 620px;
+        width: 320px;
         height: 1024px;
-        right: -620px;
+        right: -320px;
         background-color: #000000;
         position: absolute;
         z-index: 1;
         top: -16px;
         margin-right: 0;
-        padding-left: 126px;
-        padding-top: 132px;
-        gap: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 40px;
+        gap: 158px;
         transition: .5s;
-    }
 
-    .hamburger_menu li a {
-        font-size: 34.8235px;
-        line-height: 73px;
-    }
-}
+        .title_link {
+            display: block;
+        }
 
-@media (max-width: 620px) {
-    .menu_container {
-        width: 100%;
-    }
-    .hamburger_menu {
-        width: 100%;
-    }
-}
+        .logo_title {
+            font-family: 'Georgia';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 110%;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.06em;
+            color: #F1CDB3;
+        }
 
-@media (max-width: 420px) {
-    .hamburger_menu {
-        padding-left: 70px;
-    }
-    .hamburger.open {
-        right: 20px;
+        .logo_description {
+            font-family: 'Arial';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            display: flex;
+            align-items: center;
+            letter-spacing: 0.1em;
+            color: #FFFFFF;
+        }
+
+        .hamburger_menu_list {
+            display: flex;
+            flex-direction: column;
+            row-gap: 40px;
+            align-items: center;
+
+            .menu_item {
+                font-family: 'Arial';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 32px;
+                line-height: 160%;
+                border-bottom: 3px solid transparent;
+                transition: 0.5s;
+    
+                .menu_item_link {
+                    color: #CDCDCD;
+                }
+    
+            }
+    
+            .menu_item:hover {
+                border-bottom: 3px solid #F1CDB3;
+                .menu_item_link {
+                    color: #fafafa;
+                }  
+            }
+    
+            .menu_item.active {
+                border-bottom: 3px solid #F1CDB3;
+                .menu_item_link {
+                    color: #fafafa;
+                }  
+            }
+        }
     }
 }
 
@@ -120,13 +162,14 @@
 }
 
 .hamburger.open .line1{
-    transform: translateY(13px) rotate(45deg);
+    transform: translateX(14px) translateY(13px) rotate(90deg);
 }
 
 .hamburger.open .line2{
-  opacity: 0;
+    transform: translateX(0px) rotate(90deg);
+
 }
 
 .hamburger.open .line3{
-    transform: translateY(-14px) rotate(-45deg);
+    transform: translateX(-14px) translateY(-13px) rotate(90deg);
 }

@@ -40,5 +40,11 @@ a {
         }
     }
 
+    @media (max-width: 767px) {
+        .wrapper {
+            margin: 0 10px;
+        }
+    }
+
 }
 

@@ -1,5 +1,6 @@
 .pets_inner_grid {
     display: grid;
+    justify-content: center;
 }
 
 .pets {
@@ -9,6 +10,12 @@
 
     .heading {
         @include heading(300px)
+    }
+    @media (max-width: 767px) {
+        .heading {
+            font-size: 25px;
+            padding-bottom: 40px;
+        }
     }
 
     .pets_slider {
@@ -25,6 +32,13 @@
         @media (max-width: 767px) {
             .button_arrow_left, .button_arrow_right {
                 grid-row: 2;
+            }
+            .button_arrow_left {
+                justify-self: end;
+                padding-right: 7px;
+            }
+            .button_arrow_right {
+                justify-self: start;
             }
         }
 
@@ -45,6 +59,11 @@
 
                 .pet_img {
                     padding-bottom: 23px;
+                }
+                @media (max-width: 767px) {
+                    .pet_img {
+                        padding-bottom: 27px;
+                    }
                 }
 
                 .pet_name {
@@ -114,12 +133,19 @@
         .pets_slider {
             grid-template-columns: repeat(2, 135px);
             justify-content: center;
-            column-gap: 12px;
-            padding-bottom: 58px;
+            column-gap: 68px;
+            padding-bottom: 40px;
         }
     }
 
     .button_primary {
         margin: 0 auto;
+    }
+}
+@media (max-width: 767px) {
+    .pets {
+        padding-top: 42px;
+        padding-left: 5px;
+        padding-bottom: 42px;
     }
 }

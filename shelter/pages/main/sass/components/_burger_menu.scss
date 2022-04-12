@@ -27,6 +27,8 @@
         z-index: 1;
         width: 30px;
         justify-self: end;
+        margin-right: 42px;
+        margin-top: 7px;
     }
 
     .hamburger.open {
@@ -47,6 +49,12 @@
     display: block;
     margin: 10px auto;
     transition: .5s;
+}
+@media (max-width: 767px) {
+    .hamburger .line{
+        height: 2px;
+        margin: 7px auto;
+    }
 }
 
 .hamburger.open .line {

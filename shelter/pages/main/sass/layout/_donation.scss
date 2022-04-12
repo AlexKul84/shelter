@@ -24,8 +24,8 @@
         }
         @media (max-width: 767px) {
             .donation_image {
-                max-width: 505px;
-                max-height: 261px;
+                max-width: 260px;
+                max-height: 135px;
                 img {
                     width: 100%;
                     height: auto;
@@ -55,6 +55,7 @@
                     text-align: center;
                     margin: 0 auto;
                     max-width: 220px;
+                    padding-bottom: 23px;
                 }
             }
 
@@ -70,7 +71,9 @@
             }
             @media (max-width: 767px) {
                 .donation_bank {
-                    letter-spacing: 0.05em;
+                    text-align: center;
+                    letter-spacing: 0;
+                    padding-bottom: 23px;
                 }
             }
 
@@ -99,6 +102,12 @@
                 }
 
             }
+            @media (max-width: 767px) {
+                
+            .bank_accuont {
+                justify-content: center;
+                }
+            }
 
             .donation_description {
                 font-family: 'Arial';
@@ -112,6 +121,11 @@
                 padding-top: 20px;
                 max-width: 360px;
             }
+            @media (max-width: 1279px) {
+                .donation_description {
+                    text-align: justify;
+                }
+            }
         }
         @media (max-width: 1279px) {
             .donation_content {
@@ -124,6 +138,7 @@
         @media (max-width: 1279px) {
             .donation_content {
                 padding-left: 0;
+                max-width: 280px;
             }
         }
     }
@@ -135,10 +150,22 @@
             gap: 49px;
         }
     }
+    @media (max-width: 767px) {
+        .donation_inner_grid {
+            gap: 32px;
+        }
+    }
 }
 
 @media (max-width: 1279px) {
     .donation {
         padding-bottom: 94px;     
+    }
+}
+
+@media (max-width: 767px) {
+    .donation {
+        padding-top: 41px;
+        padding-bottom: 52px;     
     }
 }

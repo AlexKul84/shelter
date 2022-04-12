@@ -14,6 +14,11 @@
     background-color: #fafafa;
     transition: .5s;
 }
+@media (max-width: 767px) {
+    .button_secondary {
+        padding: 14px 44px;
+    }
+}
 
 .button_secondary:hover {
     cursor: pointer;

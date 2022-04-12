@@ -10,6 +10,7 @@
         .heading {
             font-size: 25px;
             max-width: 274px;
+            padding-bottom: 41px;
         }
     }
 
@@ -33,6 +34,16 @@
 
                 .help_img {
                     padding-bottom: 25px;
+                }
+                @media (max-width: 767px) {
+                    .help_img {
+                        padding-bottom: 15px;
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+                    }
+            
                 }
 
                 .help_text {
@@ -72,12 +83,18 @@
                 grid-template-rows: repeat(4, auto);
                 justify-content: center;
                 justify-items: center;
-                column-gap: 64px;
-                row-gap: 55px;
+                column-gap: 34px;
+                row-gap: 31px;
                 max-width: 1030px;
                 margin: 0 auto;
             }   
         }
     }
 
+}
+@media (max-width: 767px) {
+    .help {
+        padding-top: 42px;
+        padding-bottom: 41px;
+    }
 }

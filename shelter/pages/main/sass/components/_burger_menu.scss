@@ -1,0 +1,132 @@
+.hamburger {
+    display: none;
+}
+
+.menu_container {
+    position: absolute;
+    overflow-x: hidden;
+    z-index: 0;
+    height: 1024px;
+    width: 620px;
+    top: 0;
+    right: 0;
+    transition: .5s;
+}
+
+.menu_container.open {
+    top: 0;
+    height: 1024px;
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
+    right: 0;
+    z-index: 0;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        z-index: 1;
+        margin-right: 3px;
+        margin-bottom: 2px;
+    }
+
+    .hamburger.open {
+        position: absolute;
+        right: 56px;
+        z-index: 1;
+    }
+
+    .hamburger:hover {
+        cursor: pointer;
+    }
+}
+
+.hamburger .line{
+    width: 50px;
+    height: 3px;
+    background-color: #ffffff;
+    display: block;
+    margin: 10px auto;
+    transition: .5s;
+}
+
+.hamburger.open .line {
+    width: 61px;
+}
+
+.menu_container {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        display: none;
+    }
+
+    .menu_container {
+        display: block;
+        z-index: -1;
+    }
+
+    .hamburger_menu {
+        display: flex;
+        flex-direction: column;
+        width: 620px;
+        height: 1024px;
+        right: -620px;
+        background-color: #000000;
+        position: absolute;
+        z-index: 1;
+        top: -16px;
+        margin-right: 0;
+        padding-left: 126px;
+        padding-top: 132px;
+        gap: 15px;
+        transition: .5s;
+    }
+
+    .hamburger_menu li a {
+        font-size: 34.8235px;
+        line-height: 73px;
+    }
+}
+
+@media (max-width: 620px) {
+    .menu_container {
+        width: 100%;
+    }
+    .hamburger_menu {
+        width: 100%;
+    }
+}
+
+@media (max-width: 420px) {
+    .hamburger_menu {
+        padding-left: 70px;
+    }
+    .hamburger.open {
+        right: 20px;
+    }
+}
+
+.hamburger_menu.open {
+    right: 0;
+    z-index: 0;
+    box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
+}
+
+.hamburger_menu.open li a {
+    font-size: 34.8235px;
+    line-height: 73px;
+}
+
+.hamburger.open .line1{
+    transform: translateY(13px) rotate(45deg);
+}
+
+.hamburger.open .line2{
+  opacity: 0;
+}
+
+.hamburger.open .line3{
+    transform: translateY(-14px) rotate(-45deg);
+}

@@ -60,6 +60,14 @@
 
     }
 
+    @media (max-width: 1279px) {  
+        .pets_slider_content {
+            .last_cart {
+                display: none;
+            }
+        }
+    }
+
     .pagination {
         display: grid;
         grid-template-columns: repeat( 5, 52px );

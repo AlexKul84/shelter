@@ -526,6 +526,11 @@ a {
   cursor: pointer;
   background-color: #FDDCC4;
 }
+@media (max-width: 1279px) {
+  .pets .pets_slider_content .last_cart {
+    display: none;
+  }
+}
 .pets .pagination {
   display: grid;
   grid-template-columns: repeat(5, 52px);

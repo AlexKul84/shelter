@@ -1020,6 +1020,7 @@ a {
   padding: 10px 14px 10px 15px;
   background: #F1CDB3;
   border-radius: 9px;
+  transition: 0.5s;
 }
 .donation .donation_inner_grid .donation_content .bank_accuont .account_number {
   font-family: "Georgia";
@@ -1034,6 +1035,9 @@ a {
   .donation .donation_inner_grid .donation_content .bank_accuont .account_number {
     font-size: 15px;
   }
+}
+.donation .donation_inner_grid .donation_content .bank_accuont:hover {
+  background: #FDDCC4;
 }
 @media (max-width: 767px) {
   .donation .donation_inner_grid .donation_content .bank_accuont {

@@ -4,7 +4,7 @@
 
 .pets {
     background-color: $background_dark;
-    padding-top: $padding_top;
+    padding-top: 81px;
     padding-bottom: 100px;
 
     .heading {
@@ -13,7 +13,14 @@
 
     @media (max-width: 1279px) {
         .heading {
-            @include heading(404px, 30px)
+            @include heading(404px, 30px);
+        }
+    }
+    @media (max-width: 767px) {
+        .heading {
+            @include heading(290px, 41px);
+            font-size: 25px;
+
         }
     }
 
@@ -53,6 +60,12 @@
                 pointer-events: none;
             }
         }
+
+        @media (max-width: 767px) {
+            .second_cart {
+                display: none;
+            }
+        }
     
         .cart:hover {
             background: #ffffff;
@@ -75,6 +88,11 @@
             .last_cart {
                 display: none;
             }
+        }
+    }
+    @media (max-width: 767px) {  
+        .pets_slider_content {
+            padding-bottom: 42px;
         }
     }
 
@@ -124,11 +142,29 @@
             border: 2px solid #F1CDB3;
         }
     }
+    @media (max-width: 1279px) {
+        .pagination {
+            column-gap: 20px;
+        }
+    }
+    @media (max-width: 767px) {
+        .pagination {
+            column-gap: 10px;
+        }
+    }
 
 }
 
 @media (max-width: 1279px) {
     .pets {
         padding-bottom: 77px;
+        padding-top: 80px;
+
+    }
+}
+@media (max-width: 767px) {
+    .pets {
+        padding-bottom: 41px;
+        padding-top: 42px;
     }
 }

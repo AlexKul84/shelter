@@ -85,6 +85,7 @@
                 padding: 10px 14px 10px 15px;
                 background: #F1CDB3;
                 border-radius: 9px;
+                transition: .5s;
 
                 .account_number {
                     font-family: "Georgia";
@@ -101,6 +102,9 @@
                     }
                 }
 
+            }
+            .bank_accuont:hover {
+                background: #FDDCC4;
             }
             @media (max-width: 767px) {
                 

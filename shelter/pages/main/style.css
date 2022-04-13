@@ -361,6 +361,10 @@ time, mark, audio, video {
   outline: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -697,7 +701,7 @@ a {
   letter-spacing: 0.06em;
   color: #545454;
   margin: 0 auto;
-  width: 300px;
+  width: 404px;
   padding-bottom: 60px;
   padding-left: 3px;
 }
@@ -705,6 +709,7 @@ a {
   .pets .heading {
     font-size: 25px;
     padding-bottom: 40px;
+    width: 300px;
   }
 }
 .pets .pets_slider {
@@ -810,7 +815,7 @@ a {
 }
 @media (max-width: 767px) {
   .pets .pets_slider {
-    grid-template-columns: repeat(2, 135px);
+    grid-template-columns: repeat(2, 120px);
     justify-content: center;
     column-gap: 68px;
     padding-bottom: 40px;
@@ -1047,7 +1052,7 @@ a {
   padding-top: 20px;
   max-width: 360px;
 }
-@media (max-width: 1279px) {
+@media (max-width: 767px) {
   .donation .donation_inner_grid .donation_content .donation_description {
     text-align: justify;
   }
@@ -1055,12 +1060,12 @@ a {
 @media (max-width: 1279px) {
   .donation .donation_inner_grid .donation_content {
     justify-self: center;
+    max-width: 380px;
     grid-row: 1;
     gap: 80px;
-    padding-left: 25px;
   }
 }
-@media (max-width: 1279px) {
+@media (max-width: 767px) {
   .donation .donation_inner_grid .donation_content {
     padding-left: 0;
     max-width: 280px;
@@ -1170,7 +1175,6 @@ a {
     padding-bottom: 37px;
     text-align: center;
     max-width: 290px;
-    padding-left: 10px;
     margin: 0 auto;
   }
 }
@@ -1194,12 +1198,13 @@ a {
 }
 @media (max-width: 1279px) {
   .footer .footer_inner_grid .footer_adress .contacts_wrap {
-    padding-bottom: 39px;
+    padding-bottom: 32px;
   }
 }
 @media (max-width: 767px) {
   .footer .footer_inner_grid .footer_adress .contacts_wrap {
     justify-content: center;
+    padding-bottom: 38px;
   }
 }
 @media (max-width: 320px) {
@@ -1352,7 +1357,7 @@ a {
     width: 30px;
     justify-self: end;
     margin-right: 42px;
-    margin-top: 7px;
+    margin-top: 9px;
   }
 
   .hamburger.open {
@@ -1411,7 +1416,7 @@ a {
     margin-right: 0;
     padding-left: 10px;
     padding-right: 10px;
-    padding-top: 40px;
+    padding-top: 47px;
     gap: 158px;
     transition: 0.5s;
   }
@@ -1429,7 +1434,7 @@ a {
     letter-spacing: 0.06em;
     color: #F1CDB3;
   }
-  .hamburger_menu .logo_description {
+  .hamburger_menu .logo_desc {
     font-family: "Arial";
     font-style: normal;
     font-weight: 400;
@@ -1439,11 +1444,13 @@ a {
     align-items: center;
     letter-spacing: 0.1em;
     color: #FFFFFF;
+    padding-top: 9px;
+    padding-left: 4px;
   }
   .hamburger_menu .hamburger_menu_list {
     display: flex;
     flex-direction: column;
-    row-gap: 40px;
+    row-gap: 38px;
     align-items: center;
   }
   .hamburger_menu .hamburger_menu_list .menu_item {
@@ -1477,13 +1484,8 @@ a {
   box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
 }
 
-.hamburger_menu.open li a {
-  font-size: 34.8235px;
-  line-height: 73px;
-}
-
 .hamburger.open .line1 {
-  transform: translateX(14px) translateY(13px) rotate(90deg);
+  transform: translateX(10px) translateY(9px) rotate(90deg);
 }
 
 .hamburger.open .line2 {
@@ -1491,7 +1493,7 @@ a {
 }
 
 .hamburger.open .line3 {
-  transform: translateX(-14px) translateY(-13px) rotate(90deg);
+  transform: translateX(-10px) translateY(-9px) rotate(90deg);
 }
 
 /*# sourceMappingURL=style.css.map */

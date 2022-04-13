@@ -28,7 +28,7 @@
         width: 30px;
         justify-self: end;
         margin-right: 42px;
-        margin-top: 7px;
+        margin-top: 9px;
     }
 
     .hamburger.open {
@@ -88,7 +88,7 @@
         margin-right: 0;
         padding-left: 10px;
         padding-right: 10px;
-        padding-top: 40px;
+        padding-top: 47px;
         gap: 158px;
         transition: .5s;
 
@@ -108,7 +108,7 @@
             color: #F1CDB3;
         }
 
-        .logo_description {
+        .logo_desc {
             font-family: 'Arial';
             font-style: normal;
             font-weight: 400;
@@ -118,12 +118,14 @@
             align-items: center;
             letter-spacing: 0.1em;
             color: #FFFFFF;
+            padding-top: 9px;
+            padding-left: 4px;
         }
 
         .hamburger_menu_list {
             display: flex;
             flex-direction: column;
-            row-gap: 40px;
+            row-gap: 38px;
             align-items: center;
 
             .menu_item {
@@ -164,13 +166,8 @@
     box-shadow: 0 0 0 9999px rgb(0 0 0 / 50%);
 }
 
-.hamburger_menu.open li a {
-    font-size: 34.8235px;
-    line-height: 73px;
-}
-
 .hamburger.open .line1{
-    transform: translateX(14px) translateY(13px) rotate(90deg);
+    transform: translateX(10px) translateY(9px) rotate(90deg);
 }
 
 .hamburger.open .line2{
@@ -179,5 +176,5 @@
 }
 
 .hamburger.open .line3{
-    transform: translateX(-14px) translateY(-13px) rotate(90deg);
+    transform: translateX(-10px) translateY(-9px) rotate(90deg);
 }

@@ -9,12 +9,13 @@
     padding-bottom: $padding_bottom;
 
     .heading {
-        @include heading(300px)
+        @include heading(404px)
     }
     @media (max-width: 767px) {
         .heading {
             font-size: 25px;
             padding-bottom: 40px;
+            width: 300px;
         }
     }
 
@@ -131,7 +132,7 @@
     }
     @media (max-width: 767px) {  
         .pets_slider {
-            grid-template-columns: repeat(2, 135px);
+            grid-template-columns: repeat(2, 120px);
             justify-content: center;
             column-gap: 68px;
             padding-bottom: 40px;

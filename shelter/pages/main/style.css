@@ -1052,6 +1052,12 @@ a {
   padding-top: 20px;
   max-width: 360px;
 }
+@media (max-width: 1279px) {
+  .donation .donation_inner_grid .donation_content .donation_description {
+    text-align: start;
+    max-width: 380px;
+  }
+}
 @media (max-width: 767px) {
   .donation .donation_inner_grid .donation_content .donation_description {
     text-align: justify;

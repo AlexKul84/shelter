@@ -86,7 +86,7 @@
         width: 320px;
         height: 1024px;
         right: -320px;
-        background-color: #000000;
+        background-color: #292929;
         position: absolute;
         z-index: 1;
         top: -16px;
@@ -141,6 +141,7 @@
                 line-height: 160%;
                 border-bottom: 3px solid transparent;
                 transition: 0.5s;
+                list-style-type: none;
     
                 .menu_item_link {
                     color: #CDCDCD;

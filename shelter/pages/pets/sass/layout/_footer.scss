@@ -1,6 +1,8 @@
 .footer {
     background: $background_gradient;
     padding-top: 30px;
+    position: relative;
+    top: 120px;
 
     .footer_inner_grid {
         display: grid;

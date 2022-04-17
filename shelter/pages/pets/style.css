@@ -399,6 +399,10 @@ a {
   padding-top: 30px;
   height: 120px;
   background: #ffffff;
+  position: fixed;
+  margin: 0 auto;
+  width: 100%;
+  z-index: 1;
 }
 
 .header_inner {
@@ -470,6 +474,11 @@ a {
 }
 .header_inner .grid_header .navigation_grid .menu_item.active {
   border-bottom: 3px solid #F1CDB3;
+}
+
+main {
+  position: relative;
+  top: 120px;
 }
 
 .pets_inner_grid {
@@ -662,6 +671,8 @@ a {
 .footer {
   background: url(noise_lines_transparent@2X.png), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%);
   padding-top: 30px;
+  position: relative;
+  top: 120px;
 }
 .footer .footer_inner_grid {
   display: grid;

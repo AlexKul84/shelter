@@ -735,12 +735,19 @@ a {
     justify-self: start;
   }
 }
+.pets .pets_slider .slide_wrapper {
+  position: relative;
+  width: 990px;
+  height: 435px;
+  overflow: hidden;
+}
 .pets .pets_slider .pets_slider_content {
   display: grid;
-  grid-template-columns: repeat(3, 270px);
+  grid-template-columns: repeat(8, 270px);
   grid-template-rows: 435px;
   column-gap: 90px;
   margin-left: 2px;
+  position: absolute;
 }
 .pets .pets_slider .pets_slider_content .cart {
   display: flex;

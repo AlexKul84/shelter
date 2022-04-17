@@ -3,11 +3,17 @@
 const hamburger = document.querySelector('.hamburger');
 const hamburger_menu = document.querySelector('.hamburger_menu');
 const menu_container = document.querySelector('.menu_container');
+const header = document.querySelector('.header');
+const main = document.querySelector('.main');
+const footer = document.querySelector('.footer');
 
 function toggleMenu() {
     hamburger.classList.toggle('open');
     hamburger_menu.classList.toggle('open');
     menu_container.classList.toggle('open');
+    header.classList.toggle('open');
+    main.classList.toggle('open');
+    footer.classList.toggle('open');
 }
 hamburger.addEventListener('click', toggleMenu);
 
@@ -18,6 +24,9 @@ function closeMenu(event) {
         hamburger.classList.remove('open')
         hamburger_menu.classList.remove('open')
         menu_container.classList.remove('open')
+        header.classList.remove('open')
+        main.classList.remove('open')
+        footer.classList.remove('open')
     }
 }
 

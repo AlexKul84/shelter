@@ -166,6 +166,18 @@
     }
 }
 
+.header.open {
+    position: static;
+}
+
+.main.open {
+    position: static;
+}
+
+.footer.open {
+    position: static;
+}
+
 .hamburger_menu.open {
     right: 0;
     z-index: 0;

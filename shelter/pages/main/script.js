@@ -31,14 +31,15 @@ let next = document.querySelector('.next')
 let prev = document.querySelector('.prev')
 let img = document.querySelector('.pets_slider_content')
 let images = document.querySelectorAll('.cart')
-let leftInit = 360
+let gap = parseInt(window.getComputedStyle(img).columnGap)
+let leftInit = (270 + gap)
 let count = 3
 
 let position = 0
 
 prev.onclick = function() {
     position += leftInit*count
-    if (position > 0) position = -(images.length - 1)*leftInit
+    if (position > 0) position = -2160
     img.style.left = position + 'px'
 }
 

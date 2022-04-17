@@ -741,13 +741,24 @@ a {
   height: 435px;
   overflow: hidden;
 }
+@media (max-width: 1279px) {
+  .pets .pets_slider .slide_wrapper {
+    width: 580px;
+  }
+}
+@media (max-width: 767px) {
+  .pets .pets_slider .slide_wrapper {
+    width: 270px;
+  }
+}
 .pets .pets_slider .pets_slider_content {
   display: grid;
-  grid-template-columns: repeat(8, 270px);
+  grid-template-columns: repeat(9, 270px);
   grid-template-rows: 435px;
   column-gap: 90px;
   margin-left: 2px;
   position: absolute;
+  transition: 0.5s;
 }
 .pets .pets_slider .pets_slider_content .cart {
   display: flex;
@@ -789,7 +800,6 @@ a {
 }
 @media (max-width: 1279px) {
   .pets .pets_slider .pets_slider_content {
-    grid-template-columns: repeat(2, 270px);
     column-gap: 40px;
     justify-content: center;
     margin-left: 0;
@@ -800,7 +810,6 @@ a {
 }
 @media (max-width: 767px) {
   .pets .pets_slider .pets_slider_content {
-    grid-template-columns: 270px;
     justify-content: center;
     margin-left: 0;
     grid-row: 1;

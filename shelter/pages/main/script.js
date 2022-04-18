@@ -51,3 +51,16 @@ next.onclick = function() {
 }
 
 /* end slider */
+
+/* popup */
+
+let jennifer = document.querySelector('.jennifer')
+let jennifer_popup = document.querySelector('.jennifer .popup_wrapper')
+let popup_btn = document.querySelector('.popup_btn')
+function openPopup() {
+    jennifer_popup.classList.add('open_popup');
+}
+jennifer.addEventListener('click', openPopup);
+
+
+/* end popup */

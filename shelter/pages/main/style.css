@@ -1627,7 +1627,7 @@ a {
   display: inline-block;
 }
 
-.popup_btn {
+.popup_btn_jennifer, .popup_btn_sofia {
   position: absolute;
   right: 10px;
   top: -50px;
@@ -1639,7 +1639,7 @@ a {
   transition: 0.5s;
 }
 
-.popup_btn:hover {
+.popup_btn_jennifer:hover, .popup_btn_sofia:hover {
   cursor: pointer;
   background-color: #FDDCC4;
 }

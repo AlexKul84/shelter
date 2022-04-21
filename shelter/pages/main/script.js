@@ -54,9 +54,10 @@ next.onclick = function() {
 
 /* popup */
 
-let jennifer = document.querySelector('.jennifer')
-let jennifer_popup = document.querySelector('.jennifer .popup_wrapper')
-let jennifer_popup_btn = document.querySelector('.jennifer .popup_btn')
+//Jennifer
+const jennifer = document.querySelector('.jennifer')
+const jennifer_popup = document.querySelector('.popup_wrapper.jennifer_popup')
+const jennifer_popup_btn = document.querySelector('.popup_btn_jennifer')
 
 function openPopupJennifer() {
     jennifer_popup.classList.add('open_popup');
@@ -67,5 +68,22 @@ function closePopupJennifer() {
     jennifer_popup.classList.remove('open_popup');
 }
 jennifer_popup_btn.addEventListener('click', closePopupJennifer);
+
+//Sofia
+
+const sophia = document.querySelector('.sophia')
+const sophia_popup = document.querySelector('.popup_wrapper.sophia_popup')
+const sophia_popup_btn = document.querySelector('.popup_btn_sofia')
+
+function openPopupSophia() {
+    sophia_popup.classList.add('open_popup');
+}
+sophia.addEventListener('click', openPopupSophia);
+
+function closePopupSophia() {
+    sophia_popup.classList.remove('open_popup');
+}
+sophia_popup_btn.addEventListener('click', closePopupSophia);
+
 
 /* end popup */

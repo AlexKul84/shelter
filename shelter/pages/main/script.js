@@ -56,11 +56,16 @@ next.onclick = function() {
 
 let jennifer = document.querySelector('.jennifer')
 let jennifer_popup = document.querySelector('.jennifer .popup_wrapper')
-let popup_btn = document.querySelector('.popup_btn')
-function openPopup() {
+let jennifer_popup_btn = document.querySelector('.jennifer .popup_btn')
+
+function openPopupJennifer() {
     jennifer_popup.classList.add('open_popup');
 }
-jennifer.addEventListener('click', openPopup);
+jennifer.addEventListener('click', openPopupJennifer);
 
+function closePopupJennifer() {
+    jennifer_popup.classList.remove('open_popup');
+}
+jennifer_popup_btn.addEventListener('click', closePopupJennifer);
 
 /* end popup */

@@ -57,22 +57,26 @@ next.onclick = function() {
 const html_tag = document.documentElement
 
 //Jennifer
+const close_wrapper_jennifer = document.querySelector('.close_wrapper_jennifer')
 const jennifer = document.querySelector('.jennifer')
 const jennifer_popup = document.querySelector('.popup_wrapper.jennifer_popup')
 const jennifer_popup_btn = document.querySelector('.popup_btn_jennifer')
 
 function openPopupJennifer() {
     jennifer_popup.classList.add('open_popup');
+    close_wrapper_jennifer.classList.add('open_popup');
     html_tag.classList.add('open_popup')
 }
 jennifer.addEventListener('click', openPopupJennifer);
 
 function closePopupJennifer() {
     jennifer_popup.classList.remove('open_popup');
+    close_wrapper_jennifer.classList.remove('open_popup');
     html_tag.classList.remove('open_popup')
 
 }
 jennifer_popup_btn.addEventListener('click', closePopupJennifer);
+close_wrapper_jennifer.addEventListener('click', closePopupJennifer);
 
 //Sofia
 const sophia = document.querySelector('.sophia')

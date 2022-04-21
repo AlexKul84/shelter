@@ -1523,6 +1523,28 @@ a {
   transform: translateX(-10px) translateY(-9px) rotate(90deg);
 }
 
+.close_wrapper_jennifer {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.close_wrapper_jennifer.open_popup {
+  display: block;
+}
+
+.close_wrapper_jennifer:hover {
+  cursor: pointer;
+}
+.close_wrapper_jennifer:hover .popup_btn_jennifer {
+  cursor: pointer;
+  background-color: #FDDCC4;
+}
+
 .popup_wrapper {
   position: fixed;
   display: none;
@@ -1550,7 +1572,6 @@ html.open_popup {
   height: 500px;
   background-color: #FAFAFA;
   padding-bottom: 99px;
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
   border-radius: 9px;
 }
 .popup .popup_image {
@@ -1633,8 +1654,9 @@ html.open_popup {
 
 .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
   position: absolute;
-  right: 10px;
-  top: -50px;
+  right: 50%;
+  top: 50%;
+  transform: translate(480px, -320px);
   width: 52px;
   height: 52px;
   border: 2px solid #F1CDB3;

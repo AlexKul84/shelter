@@ -54,6 +54,8 @@ next.onclick = function() {
 
 /* popup */
 
+const html_tag = document.documentElement
+
 //Jennifer
 const jennifer = document.querySelector('.jennifer')
 const jennifer_popup = document.querySelector('.popup_wrapper.jennifer_popup')
@@ -61,29 +63,152 @@ const jennifer_popup_btn = document.querySelector('.popup_btn_jennifer')
 
 function openPopupJennifer() {
     jennifer_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
 }
 jennifer.addEventListener('click', openPopupJennifer);
 
 function closePopupJennifer() {
     jennifer_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+
 }
 jennifer_popup_btn.addEventListener('click', closePopupJennifer);
 
 //Sofia
-
 const sophia = document.querySelector('.sophia')
 const sophia_popup = document.querySelector('.popup_wrapper.sophia_popup')
 const sophia_popup_btn = document.querySelector('.popup_btn_sofia')
 
 function openPopupSophia() {
     sophia_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
 }
 sophia.addEventListener('click', openPopupSophia);
 
 function closePopupSophia() {
     sophia_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
 }
 sophia_popup_btn.addEventListener('click', closePopupSophia);
+
+//woody
+const woody = document.querySelector('.woody')
+const woody_popup = document.querySelector('.popup_wrapper.woody_popup')
+const woody_popup_btn = document.querySelector('.popup_btn_woody')
+
+function openPopupWoody() {
+    woody_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+woody.addEventListener('click', openPopupWoody);
+
+function closePopupWoody() {
+    woody_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+woody_popup_btn.addEventListener('click', closePopupWoody);
+
+//scarlett
+const scarlett = document.querySelector('.scarlett')
+const scarlett_popup = document.querySelector('.popup_wrapper.scarlett_popup')
+const scarlett_popup_btn = document.querySelector('.popup_btn_scarlett')
+
+function openPopupScarlett() {
+    scarlett_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+scarlett.addEventListener('click', openPopupScarlett);
+
+function closePopupScarlett() {
+    scarlett_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+scarlett_popup_btn.addEventListener('click', closePopupScarlett);
+
+//katrine
+const katrine = document.querySelector('.katrine')
+const katrine_popup = document.querySelector('.popup_wrapper.katrine_popup')
+const katrine_popup_btn = document.querySelector('.popup_btn_katrine')
+
+function openPopupKatrine() {
+    katrine_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+katrine.addEventListener('click', openPopupKatrine);
+
+function closePopupKatrine() {
+    katrine_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+katrine_popup_btn.addEventListener('click', closePopupKatrine);
+
+//timmy
+const timmy = document.querySelector('.timmy')
+const timmy_popup = document.querySelector('.popup_wrapper.timmy_popup')
+const timmy_popup_btn = document.querySelector('.popup_btn_timmy')
+
+function openPopupTimmy() {
+    timmy_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+timmy.addEventListener('click', openPopupTimmy);
+
+function closePopupTimmy() {
+    timmy_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+timmy_popup_btn.addEventListener('click', closePopupTimmy);
+
+//freddie
+const freddie = document.querySelector('.freddie')
+const freddie_popup = document.querySelector('.popup_wrapper.freddie_popup')
+const freddie_popup_btn = document.querySelector('.popup_btn_freddie')
+
+function openPopupFreddie() {
+    freddie_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+freddie.addEventListener('click', openPopupFreddie);
+
+function closePopupFreddie() {
+    freddie_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+freddie_popup_btn.addEventListener('click', closePopupFreddie);
+
+//charly
+const charly = document.querySelector('.charly')
+const charly_popup = document.querySelector('.popup_wrapper.charly_popup')
+const charly_popup_btn = document.querySelector('.popup_btn_charly')
+
+function openPopupCharly() {
+    charly_popup.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+charly.addEventListener('click', openPopupCharly);
+
+function closePopupCharly() {
+    charly_popup.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+charly_popup_btn.addEventListener('click', closePopupCharly);
+
+//Jennifer1
+const jennifer1 = document.querySelector('.jennifer1')
+const jennifer_popup1 = document.querySelector('.popup_wrapper.jennifer_popup1')
+const jennifer_popup_btn1 = document.querySelector('.popup_btn_jennifer1')
+
+function openPopupJennifer1() {
+    jennifer_popup1.classList.add('open_popup');
+    html_tag.classList.add('open_popup')
+}
+jennifer1.addEventListener('click', openPopupJennifer1);
+
+function closePopupJennifer1() {
+    jennifer_popup1.classList.remove('open_popup');
+    html_tag.classList.remove('open_popup')
+}
+jennifer_popup_btn1.addEventListener('click', closePopupJennifer1);
 
 
 /* end popup */

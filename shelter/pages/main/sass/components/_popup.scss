@@ -1,4 +1,12 @@
-.close_wrapper_jennifer {
+.close_wrapper_jennifer, 
+.close_wrapper_sophia, 
+.close_wrapper_woody, 
+.close_wrapper_scarlett, 
+.close_wrapper_katrine, 
+.close_wrapper_timmy, 
+.close_wrapper_freddie, 
+.close_wrapper_charly, 
+.close_wrapper_jennifer1 {
     position: fixed;
     display: none;
     top: 0;
@@ -7,13 +15,38 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
 }
-.close_wrapper_jennifer.open_popup {
+.close_wrapper_jennifer.open_popup,
+.close_wrapper_sophia.open_popup, 
+.close_wrapper_woody.open_popup, 
+.close_wrapper_scarlett.open_popup, 
+.close_wrapper_katrine.open_popup, 
+.close_wrapper_timmy.open_popup, 
+.close_wrapper_freddie.open_popup, 
+.close_wrapper_charly.open_popup, 
+.close_wrapper_jennifer1.open_popup {
     display: block;
 }
 
-.close_wrapper_jennifer:hover {
+.close_wrapper_jennifer:hover,
+.close_wrapper_sophia:hover, 
+.close_wrapper_woody:hover, 
+.close_wrapper_scarlett:hover, 
+.close_wrapper_katrine:hover, 
+.close_wrapper_timmy:hover, 
+.close_wrapper_freddie:hover, 
+.close_wrapper_charly:hover, 
+.close_wrapper_jennifer1:hover {
     cursor: pointer;
-    .popup_btn_jennifer {
+
+    .popup_btn_jennifer,
+    .popup_btn_sophia, 
+    .popup_btn_woody, 
+    .popup_btn_scarlett, 
+    .popup_btn_katrine, 
+    .popup_btn_timmy, 
+    .popup_btn_freddie, 
+    .popup_btn_charly, 
+    .popup_btn_jennifer1 {
         cursor: pointer;
         background-color: #FDDCC4;
     }
@@ -197,7 +230,7 @@ html.open_popup {
 }
 
 
-.popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
+.popup_btn_jennifer, .popup_btn_sophia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
     position: absolute;
     right: 50%;
     top: 50%;
@@ -211,18 +244,18 @@ html.open_popup {
 }
 
 @media (max-width: 1000px) {
-    .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
+    .popup_btn_jennifer, .popup_btn_sophia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
         transform: translate(380px, -270px);
     }
 }
 
 @media (max-width: 767px) {
-    .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
+    .popup_btn_jennifer, .popup_btn_sophia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
         transform: translate(192px, -270px);
     }
 }
 
-.popup_btn_jennifer:hover, .popup_btn_sofia:hover, .popup_btn_woody:hover, .popup_btn_scarlett:hover, .popup_btn_katrine:hover, .popup_btn_timmy:hover, .popup_btn_freddie:hover, .popup_btn_charly:hover, .popup_btn_jennifer1:hover {
+.popup_btn_jennifer:hover, .popup_btn_sophia:hover, .popup_btn_woody:hover, .popup_btn_scarlett:hover, .popup_btn_katrine:hover, .popup_btn_timmy:hover, .popup_btn_freddie:hover, .popup_btn_charly:hover, .popup_btn_jennifer1:hover {
     cursor: pointer;
     background-color: #FDDCC4;
 }

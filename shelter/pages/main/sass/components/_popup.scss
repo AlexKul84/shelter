@@ -37,6 +37,14 @@
     }
 }
 
+@media (max-width: 1000px) {
+    .popup_wrapper {
+        width: auto;
+        height: auto;
+    }
+}
+
+
 .popup_wrapper.open_popup {
     display: block;
 }
@@ -80,6 +88,12 @@ html.open_popup {
         .popup_image {
             width: 270px;
             height: 330px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .popup_image {
+            display: none;
         }
     }
 
@@ -153,6 +167,13 @@ html.open_popup {
             }
         }
     }
+    @media (max-width: 767px) {
+        .popup_content {
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
 }
 
 @media (max-width: 1000px) {
@@ -164,6 +185,17 @@ html.open_popup {
         padding-bottom: 20px;
     }
 }
+
+@media (max-width: 767px) {
+    .popup {
+        grid-template-columns: 300px;
+        column-gap: 10px;
+        width: auto;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
+
 
 .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
     position: absolute;
@@ -181,6 +213,12 @@ html.open_popup {
 @media (max-width: 1000px) {
     .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
         transform: translate(380px, -270px);
+    }
+}
+
+@media (max-width: 767px) {
+    .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
+        transform: translate(192px, -270px);
     }
 }
 

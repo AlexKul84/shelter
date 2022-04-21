@@ -25,9 +25,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 952px;
-    height: 552px;
+    width: 900px;
+    height: 500px;
     margin-right: -50%;
+}
+
+@media (max-width: 1000px) {
+    .popup_wrapper {
+        width: 680px;
+        height: 440px;
+    }
 }
 
 .popup_wrapper.open_popup {
@@ -46,13 +53,12 @@ html.open_popup {
     height: 500px;
     background-color: #FAFAFA;
     padding-bottom: 99px; 
-    
     border-radius: 9px;
     
     .popup_image {
         justify-self: center;
         align-self: center;
-        min-width: 500px;
+        width: 500px;
         height: 500px;
         display: flex;
         align-items: center;
@@ -61,6 +67,19 @@ html.open_popup {
         img {
             width: 400px;
             padding-bottom: 60px;
+        }
+        @media (max-width: 1000px) {
+            img {
+                width: auto;
+                padding-bottom: 0;
+            }
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .popup_image {
+            width: 270px;
+            height: 330px;
         }
     }
 
@@ -136,17 +155,33 @@ html.open_popup {
     }
 }
 
+@media (max-width: 1000px) {
+    .popup {
+        grid-template-columns: 40% 1fr;
+        column-gap: 10px;
+        width: 680px;
+        height: 440px;
+        padding-bottom: 20px;
+    }
+}
+
 .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
     position: absolute;
     right: 50%;
     top: 50%;
-    transform: translate(480px, -320px);
+    transform: translate(490px, -300px);
     width: 52px;
     height: 52px;
     border: 2px solid #F1CDB3;
     box-sizing: border-box;
     border-radius: 100px;
     transition: 0.5s;
+}
+
+@media (max-width: 1000px) {
+    .popup_btn_jennifer, .popup_btn_sofia, .popup_btn_woody, .popup_btn_scarlett, .popup_btn_katrine, .popup_btn_timmy, .popup_btn_freddie, .popup_btn_charly, .popup_btn_jennifer1 {
+        transform: translate(380px, -270px);
+    }
 }
 
 .popup_btn_jennifer:hover, .popup_btn_sofia:hover, .popup_btn_woody:hover, .popup_btn_scarlett:hover, .popup_btn_katrine:hover, .popup_btn_timmy:hover, .popup_btn_freddie:hover, .popup_btn_charly:hover, .popup_btn_jennifer1:hover {

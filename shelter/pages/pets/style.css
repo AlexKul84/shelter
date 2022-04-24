@@ -542,6 +542,24 @@ main {
     font-size: 25px;
   }
 }
+.pets .slide_wrapper {
+  position: relative;
+  width: 1200px;
+  height: 930px;
+  overflow: hidden;
+}
+@media (max-width: 1279px) {
+  .pets .slide_wrapper {
+    width: 768px;
+    height: 1393px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .pets .slide_wrapper {
+    width: 270px;
+  }
+}
 .pets .pets_slider_content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

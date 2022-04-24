@@ -1787,4 +1787,76 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
         })
     }
 
+    let button_start = document.querySelector('.button_start')
+    let buttom_end = document.querySelector('.buttom_end')
+
+    let buttom_right = document.querySelector('.buttom_right')
+    let button_left = document.querySelector('.button_left')
+    let mainDiv = document.querySelector('.pets_slider_content')
+    let gap = parseInt(window.getComputedStyle(mainDiv).rowGap)
+    let topInit = (437.5 + gap)
+
+    if (document.documentElement.scrollWidth >= 1280) {
+      let count = 2
+
+      let position = 0
+
+      buttom_right.onclick = function() {
+        position -= topInit*count
+        if (position <= -((carts.length) / 4) * topInit) position = -4655
+        mainDiv.style.top = position + 'px'
+      }
+
+      button_left.onclick = function() {
+        position += topInit*count
+        if (position > 0) position = 0
+        mainDiv.style.top = position + 'px'
+      }
+
+      button_start.onclick = function() {
+        position = 0
+        mainDiv.style.top = position + 'px'
+      }
+
+      buttom_end.onclick = function() {
+        position = -4655
+        mainDiv.style.top = position + 'px'
+      }
+
+    }
+    if (document.documentElement.scrollWidth >= 768 && document.documentElement.scrollWidth < 1280) {
+      let count = 3
+
+      let position = 0
+
+      buttom_right.onclick = function() {
+        position -= topInit*count
+        if (position <= -((carts.length) / 2) * topInit) position = -9754.5
+        mainDiv.style.top = position + 'px'
+      }
+
+      button_left.onclick = function() {
+        position += topInit*count
+        if (position > 0) position = 0
+        mainDiv.style.top = position + 'px'
+      }
+    }
+    if (document.documentElement.scrollWidth < 768) {
+      let count = 3
+
+      let position = 0
+
+      buttom_right.onclick = function() {
+        position -= topInit*count
+        if (position <= -(carts.length) * topInit) position = -20902.5
+        mainDiv.style.top = position + 'px'
+      }
+
+      button_left.onclick = function() {
+        position += topInit*count
+        if (position > 0) position = 0
+        mainDiv.style.top = position + 'px'
+      }
+    }
+
 /* end pagination */

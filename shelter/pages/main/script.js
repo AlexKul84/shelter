@@ -249,8 +249,3 @@ close_wrapper_jennifer1.addEventListener('click', closePopupJennifer1);
 
 /* end popup */
 
-/* pagination */
-
-
-
-/* end pagination */

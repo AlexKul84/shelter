@@ -626,7 +626,23 @@ let pets = [
             let popup_heading = document.querySelector('.popup_heading')
             popup_heading.textContent = targetPet.name
 
-            console.log(popup_heading)
+            let popup_short_desc = document.querySelector('.popup_short_desc')
+            popup_short_desc.textContent = targetPet.type + ': ' + targetPet.breed
+
+            let popup_description = document.querySelector('.popup_description')
+            popup_description.textContent = targetPet.description
+
+            let age = document.querySelector('.age')
+            age.innerHTML = `<strong>Age :</strong> ${targetPet.age}`
+
+            let inoculations = document.querySelector('.inoculations')
+            inoculations.innerHTML = `<strong>Inoculations :</strong> ${targetPet.inoculations}`
+
+            let diseases = document.querySelector('.diseases')
+            diseases.innerHTML = `<strong>Diseases :</strong> ${targetPet.diseases}`
+
+            let parasites = document.querySelector('.parasites')
+            parasites.innerHTML = `<strong>Parasites :</strong> ${targetPet.parasites}`
 
             let popup_btn = document.querySelector('.popup_btn')
         

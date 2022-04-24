@@ -572,35 +572,107 @@ let pets = [
     }
   ]
 
-let pets_slider_content = document.querySelector('.pets_slider_content')
+    let pets_slider_content = document.querySelector('.pets_slider_content')
 
-pets.sort(() => Math.random() - 0.5);
+    pets.sort(() => Math.random() - 0.5);
 
-for (pet of pets) {
-    //create carts
-    let divCart = document.createElement('div')
-    divCart.classList.add('cart')
-    pets_slider_content.appendChild(divCart)
+    for (pet of pets) {
+        //create carts
+        let divCart = document.createElement('div')
+        divCart.classList.add('cart')
+        divCart.id = pet.name
+        pets_slider_content.appendChild(divCart)
 
-    let divPetImg = document.createElement('div')
-    divPetImg.classList.add('pet_img')
-    divCart.appendChild(divPetImg)
+        let divPetImg = document.createElement('div')
+        divPetImg.classList.add('pet_img')
+        divCart.appendChild(divPetImg)
 
-    let img = document.createElement('img')
-    img.setAttribute('src', pet.img)
-    divPetImg.appendChild(img)
+        let img = document.createElement('img')
+        img.setAttribute('src', pet.img)
+        divPetImg.appendChild(img)
 
-    let pet_name = document.createElement('p')
-    pet_name.innerHTML = pet.name
-    pet_name.classList.add('pet_name')
-    divCart.appendChild(pet_name)
+        let pet_name = document.createElement('p')
+        pet_name.innerHTML = pet.name
+        pet_name.classList.add('pet_name')
+        divCart.appendChild(pet_name)
 
-    let button_secondary = document.createElement('a')
-    button_secondary.innerHTML = 'Learn More'
-    button_secondary.classList.add('button_secondary')
-    divCart.appendChild(button_secondary)
-  }
+        let button_secondary = document.createElement('a')
+        button_secondary.innerHTML = 'Learn More'
+        button_secondary.classList.add('button_secondary')
+        divCart.appendChild(button_secondary)
+    }
 
-  
+    let carts = document.querySelectorAll('.cart')
+
+
+    for(cart of carts) {
+    
+        cart.addEventListener('click', function(event) {
+
+            let targetPet = pets.find(i => i.name == event.currentTarget.id)
+            console.log(targetPet.name)
+
+            let close_wrapper = document.querySelector('.close_wrapper')
+            let popup_wrapper = document.querySelector('.popup_wrapper')
+            const html_tag = document.documentElement
+
+            close_wrapper.classList.add('open_popup')
+            popup_wrapper.classList.add('open_popup')
+            html_tag.classList.add('open_popup')
+
+            let img = document.querySelector('.popup_image img')
+            img.src = targetPet.img
+
+            let popup_heading = document.querySelector('.popup_heading')
+            popup_heading.textContent = targetPet.name
+
+            console.log(popup_heading)
+
+            let popup_btn = document.querySelector('.popup_btn')
+        
+            function closePopup() {
+                popup_wrapper.classList.remove('open_popup');
+                close_wrapper.classList.remove('open_popup');
+                html_tag.classList.remove('open_popup')
+            }
+            close_wrapper.addEventListener('click', closePopup);
+            popup_btn.addEventListener('click', closePopup);
+        
+        })
+    }
+
+
 
 /* end pagination */
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // let close_wrapper = document.createElement('div')
+            // close_wrapper.classList.add('close_wrapper')
+            // pets_slider_content.appendChild(close_wrapper)
+            
+            //     let popup_btn  = document.createElement('button')
+            //     popup_btn.classList.add('popup_btn')
+            //     close_wrapper.appendChild(popup_btn)
+
+            //     let img  = document.createElement('img')
+            //     img.setAttribute('src', '../../assets/icons/Vector.svg')
+            //     popup_btn.appendChild(img)
+
+            // let popup_wrapper = document.createElement('div')
+            // popup_wrapper.classList.add('popup_wrapper')
+            // pets_slider_content.appendChild(close_wrapper)
+
+            //     let popup = document.createElement('div')
+            //     popup.classList.add('popup')
+            //     popup_wrapper.appendChild(popup)

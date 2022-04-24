@@ -36,8 +36,8 @@ navLinks.forEach((el) => el.addEventListener('click', closeMenu));
 
 /* pagination */
 
-let pets = [
-    {
+let petsArray = [
+    [{
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -124,9 +124,9 @@ let pets = [
       "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
       "diseases": ["deafness", "blindness"],
       "parasites": ["lice", "fleas"]
-    },
+    }],
 
-    {
+    [{
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -213,9 +213,9 @@ let pets = [
       "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
       "diseases": ["deafness", "blindness"],
       "parasites": ["lice", "fleas"]
-    },
+    }],
 
-    {
+    [{
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -302,9 +302,9 @@ let pets = [
       "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
       "diseases": ["deafness", "blindness"],
       "parasites": ["lice", "fleas"]
-    },
+    }],
 
-    {
+    [{
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -391,9 +391,9 @@ let pets = [
       "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
       "diseases": ["deafness", "blindness"],
       "parasites": ["lice", "fleas"]
-    },
+    }],
 
-    {
+    [{
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -480,9 +480,9 @@ let pets = [
       "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
       "diseases": ["deafness", "blindness"],
       "parasites": ["lice", "fleas"]
-    },
+    }],
 
-    {
+    [{
       "name": "Jennifer",
       "img": "../../assets/images/jennifer.png",
       "type": "Dog",
@@ -569,12 +569,20 @@ let pets = [
       "inoculations": ["bordetella bronchiseptica", "leptospirosis"],
       "diseases": ["deafness", "blindness"],
       "parasites": ["lice", "fleas"]
-    }
+    }]
   ]
+
+    let pets = []
+
+    for(petsItem of petsArray) {
+      petsItem.sort(() => Math.random() - 0.5);
+      pets = pets.concat(petsItem)
+    }
+
+    console.log(pets)
 
     let pets_slider_content = document.querySelector('.pets_slider_content')
 
-    pets.sort(() => Math.random() - 0.5);
 
     for (pet of pets) {
         //create carts

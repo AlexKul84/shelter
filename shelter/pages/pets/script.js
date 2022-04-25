@@ -1,11 +1,13 @@
 /* hamburger menu */
 
+const html_tag = document.documentElement
 const hamburger = document.querySelector('.hamburger');
 const hamburger_menu = document.querySelector('.hamburger_menu');
 const menu_container = document.querySelector('.menu_container');
 const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
+const close_wrapper_burger = document.querySelector('.close_wrapper_burger');
 
 function toggleMenu() {
     hamburger.classList.toggle('open');
@@ -14,6 +16,9 @@ function toggleMenu() {
     header.classList.toggle('open');
     main.classList.toggle('open');
     footer.classList.toggle('open');
+    close_wrapper_burger.classList.toggle('open');
+    html_tag.classList.toggle('open')
+
 }
 hamburger.addEventListener('click', toggleMenu);
 
@@ -27,10 +32,24 @@ function closeMenu(event) {
         header.classList.remove('open')
         main.classList.remove('open')
         footer.classList.remove('open')
+        close_wrapper_burger.classList.remove('open')
+        html_tag.classList.remove('open')
     }
+    if (event.target.classList.contains('close_wrapper_burger')) {
+      hamburger.classList.remove('open')
+      hamburger_menu.classList.remove('open')
+      menu_container.classList.remove('open')
+      header.classList.remove('open')
+      main.classList.remove('open')
+      footer.classList.remove('open')
+      close_wrapper_burger.classList.remove('open')
+      html_tag.classList.remove('open')
+  }
 }
 
 navLinks.forEach((el) => el.addEventListener('click', closeMenu));
+close_wrapper_burger.addEventListener('click', closeMenu);
+
 
 /* end hamburger menu */
 
@@ -1741,7 +1760,6 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
 
             let close_wrapper = document.querySelector('.close_wrapper')
             let popup_wrapper = document.querySelector('.popup_wrapper')
-            const html_tag = document.documentElement
 
             close_wrapper.classList.add('open_popup')
             popup_wrapper.classList.add('open_popup')

@@ -899,6 +899,24 @@ main {
   background-color: #FDDCC4;
 }
 
+html.open {
+  overflow: hidden;
+}
+
+.close_wrapper_burger {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+}
+
+.close_wrapper_burger.open {
+  display: block;
+}
+
 .hamburger {
   display: none;
 }
@@ -917,7 +935,6 @@ main {
 .menu_container.open {
   top: -30px;
   height: 1024px;
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
   right: -10px;
   z-index: 0;
 }
@@ -952,7 +969,7 @@ main {
 }
 
 .hamburger.open .line {
-  background-color: #F1CDB3;
+  background-color: #000000;
 }
 
 @media (max-width: 767px) {
@@ -985,7 +1002,7 @@ main {
     width: 320px;
     height: 1024px;
     right: -320px;
-    background-color: #292929;
+    background-color: #ffffff;
     position: absolute;
     z-index: 1;
     top: -16px;
@@ -1008,7 +1025,7 @@ main {
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    color: #F1CDB3;
+    color: #545454;
   }
   .hamburger_menu .logo_desc {
     font-family: "Arial";
@@ -1019,7 +1036,7 @@ main {
     display: flex;
     align-items: center;
     letter-spacing: 0.1em;
-    color: #FFFFFF;
+    color: #292929;
     padding-top: 9px;
     padding-left: 4px;
   }
@@ -1040,19 +1057,22 @@ main {
     list-style-type: none;
   }
   .hamburger_menu .hamburger_menu_list .menu_item .menu_item_link {
-    color: #CDCDCD;
+    color: #545454;
   }
   .hamburger_menu .hamburger_menu_list .menu_item:hover {
     border-bottom: 3px solid #F1CDB3;
   }
   .hamburger_menu .hamburger_menu_list .menu_item:hover .menu_item_link {
-    color: #fafafa;
+    color: #292929;
   }
   .hamburger_menu .hamburger_menu_list .menu_item.active {
     border-bottom: 3px solid #F1CDB3;
   }
   .hamburger_menu .hamburger_menu_list .menu_item.active .menu_item_link {
-    color: #fafafa;
+    color: #545454;
+  }
+  .hamburger_menu .hamburger_menu_list .menu_item.active .menu_item_link:hover {
+    color: #292929;
   }
 }
 .header.open {
@@ -1070,7 +1090,6 @@ main {
 .hamburger_menu.open {
   right: 0;
   z-index: 0;
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
 }
 
 .hamburger.open .line1 {

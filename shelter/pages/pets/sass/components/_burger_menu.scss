@@ -21,7 +21,7 @@ html.open {
 }
 
 .menu_container {
-    position: absolute;
+    position: fixed;
     overflow-x: hidden;
     z-index: 0;
     height: 1024px;
@@ -49,7 +49,7 @@ html.open {
     }
 
     .hamburger.open {
-        position: absolute;
+        position: fixed;
         right: 2px;
         z-index: 1;
     }

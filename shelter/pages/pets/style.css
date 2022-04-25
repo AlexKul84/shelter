@@ -652,19 +652,25 @@ main {
   text-align: center;
   letter-spacing: 0.06em;
 }
-.pets .pagination .buttom_right:hover, .pets .pagination .buttom_end:hover {
-  background: #F1CDB3;
-  cursor: pointer;
-}
-.pets .pagination .button_start, .pets .pagination .button_left {
-  border: 2px solid #CDCDCD;
-  color: #CDCDCD;
-}
 .pets .pagination .button_active {
   background: #F1CDB3;
 }
-.pets .pagination .buttom_right, .pets .pagination .buttom_end {
+.pets .pagination .button_start, .pets .pagination .button_left, .pets .pagination .buttom_right, .pets .pagination .buttom_end {
   border: 2px solid #F1CDB3;
+}
+.pets .pagination .button_start:hover, .pets .pagination .button_left:hover, .pets .pagination .buttom_right:hover, .pets .pagination .buttom_end:hover {
+  background: #F1CDB3;
+  cursor: pointer;
+}
+.pets .pagination .button_start.none_active, .pets .pagination .button_left.none_active, .pets .pagination .buttom_right.none_active, .pets .pagination .buttom_end.none_active {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+}
+.pets .pagination .button_start.none_active:hover, .pets .pagination .button_left.none_active:hover, .pets .pagination .buttom_right.none_active:hover, .pets .pagination .buttom_end.none_active:hover {
+  border: 2px solid #CDCDCD;
+  color: #CDCDCD;
+  background-color: transparent;
+  cursor: auto;
 }
 @media (max-width: 1279px) {
   .pets .pagination {

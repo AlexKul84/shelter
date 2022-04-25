@@ -1353,6 +1353,20 @@ a {
   background-color: #FDDCC4;
 }
 
+.close_wrapper_burger {
+  position: fixed;
+  display: none;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(41, 41, 41, 0.6);
+}
+
+.close_wrapper_burger.open {
+  display: block;
+}
+
 .hamburger {
   display: none;
 }
@@ -1371,7 +1385,6 @@ a {
 .menu_container.open {
   top: -30px;
   height: 1024px;
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
   right: -10px;
   z-index: 0;
 }
@@ -1389,7 +1402,7 @@ a {
   .hamburger.open {
     position: absolute;
     right: 2px;
-    z-index: 1;
+    z-index: 2;
   }
 
   .hamburger:hover {
@@ -1507,8 +1520,7 @@ a {
 }
 .hamburger_menu.open {
   right: 0;
-  z-index: 0;
-  box-shadow: 0 0 0 9999px rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hamburger.open .line1 {

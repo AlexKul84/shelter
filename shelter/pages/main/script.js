@@ -3,11 +3,13 @@
 const hamburger = document.querySelector('.hamburger');
 const hamburger_menu = document.querySelector('.hamburger_menu');
 const menu_container = document.querySelector('.menu_container');
+const close_wrapper_burger = document.querySelector('.close_wrapper_burger');
 
 function toggleMenu() {
     hamburger.classList.toggle('open');
     hamburger_menu.classList.toggle('open');
     menu_container.classList.toggle('open');
+    close_wrapper_burger.classList.toggle('open');
 }
 hamburger.addEventListener('click', toggleMenu);
 
@@ -18,10 +20,19 @@ function closeMenu(event) {
         hamburger.classList.remove('open')
         hamburger_menu.classList.remove('open')
         menu_container.classList.remove('open')
+        close_wrapper_burger.classList.remove('open')
+    }
+    if (event.target.classList.contains('close_wrapper_burger')) {
+        hamburger.classList.remove('open')
+        hamburger_menu.classList.remove('open')
+        menu_container.classList.remove('open')
+        close_wrapper_burger.classList.remove('open')
     }
 }
 
 navLinks.forEach((el) => el.addEventListener('click', closeMenu));
+close_wrapper_burger.addEventListener('click', closeMenu);
+
 
 /* end hamburger menu */
 

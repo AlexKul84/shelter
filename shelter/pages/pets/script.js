@@ -1867,7 +1867,7 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
         this.classList.add('none_active')
         position = 0
         mainDiv.style.top = position + 'px'
-        pageCount.textContent = 0
+        pageCount.textContent = 1
       }
 
       buttom_end.onclick = function() {
@@ -1921,7 +1921,7 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
         this.classList.add('none_active')
         position = 0
         mainDiv.style.top = position + 'px'
-        pageCount.textContent = 0
+        pageCount.textContent = 1
       }
 
       buttom_end.onclick = function() {
@@ -1946,7 +1946,7 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
         button_start.classList.remove('none_active')
         if (position <= -20902.5) {
           position = -20902.5
-          pageCount.textContent = 16
+          pageCount.textContent = 15
           this.classList.add('none_active')
           buttom_end.classList.add('none_active')
         }
@@ -1975,7 +1975,7 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
         this.classList.add('none_active')
         position = 0
         mainDiv.style.top = position + 'px'
-        pageCount.textContent = 0
+        pageCount.textContent = 1
       }
 
       buttom_end.onclick = function() {
@@ -1985,7 +1985,7 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
         buttom_right.classList.add('none_active')
         position = -20902.5
         mainDiv.style.top = position + 'px'
-        pageCount.textContent = 8
+        pageCount.textContent = 16
       }
     }
 

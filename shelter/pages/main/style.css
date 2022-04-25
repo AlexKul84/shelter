@@ -1353,6 +1353,10 @@ a {
   background-color: #FDDCC4;
 }
 
+html.open {
+  overflow: hidden;
+}
+
 .close_wrapper_burger {
   position: fixed;
   display: none;

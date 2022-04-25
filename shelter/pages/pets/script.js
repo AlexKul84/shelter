@@ -8,6 +8,7 @@ const header = document.querySelector('.header');
 const main = document.querySelector('.main');
 const footer = document.querySelector('.footer');
 const close_wrapper_burger = document.querySelector('.close_wrapper_burger');
+const main_link = document.querySelector('.main_link');
 
 function toggleMenu() {
     hamburger.classList.toggle('open');
@@ -45,11 +46,21 @@ function closeMenu(event) {
       close_wrapper_burger.classList.remove('open')
       html_tag.classList.remove('open')
   }
+  if (event.target.classList.contains('main_link')) {
+    hamburger.classList.remove('open')
+    hamburger_menu.classList.remove('open')
+    menu_container.classList.remove('open')
+    header.classList.remove('open')
+    main.classList.remove('open')
+    footer.classList.remove('open')
+    close_wrapper_burger.classList.remove('open')
+    html_tag.classList.remove('open')
+}
 }
 
 navLinks.forEach((el) => el.addEventListener('click', closeMenu));
 close_wrapper_burger.addEventListener('click', closeMenu);
-
+main_link.addEventListener('click', closeMenu);
 
 /* end hamburger menu */
 

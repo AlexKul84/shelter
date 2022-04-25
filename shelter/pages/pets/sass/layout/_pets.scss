@@ -38,7 +38,7 @@ main {
 
     @media (max-width: 1279px) {
         .slide_wrapper {
-            width: 768px;
+            width: 580px;
             height: 1393px;
             margin: 0 auto;
         }
@@ -111,7 +111,7 @@ main {
         .pets_slider_content {
             grid-template-columns: repeat(auto-fit, minmax(250px, 270px));
             row-gap: 27px;
-            width: 768px;
+            width: 580px;
             justify-content: center;
             padding-bottom: 37px;
             .last_cart {

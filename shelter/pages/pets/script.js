@@ -1856,16 +1856,53 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
 
       buttom_right.onclick = function() {
         position -= topInit*count
-        if (position <= -((carts.length) / 2) * topInit) position = -9754.5
+        button_left.classList.remove('none_active')
+        button_start.classList.remove('none_active')
+        if (position <= -9754.5) {
+          position = -9754.5
+          pageCount.textContent = 7
+          this.classList.add('none_active')
+          buttom_end.classList.add('none_active')
+        }
         mainDiv.style.top = position + 'px'
+        pageCount.textContent++
       }
 
       button_left.onclick = function() {
         position += topInit*count
-        if (position > 0) position = 0
+        buttom_right.classList.remove('none_active')
+        buttom_end.classList.remove('none_active')
+        if (position >= 0) {
+          position = 0
+          pageCount.textContent = 2
+          this.classList.add('none_active')
+          button_start.classList.add('none_active')
+        }
         mainDiv.style.top = position + 'px'
+        pageCount.textContent--
+      }
+
+      button_start.onclick = function() {
+        buttom_right.classList.remove('none_active')
+        buttom_end.classList.remove('none_active')
+        button_left.classList.add('none_active')
+        this.classList.add('none_active')
+        position = 0
+        mainDiv.style.top = position + 'px'
+        pageCount.textContent = 0
+      }
+
+      buttom_end.onclick = function() {
+        button_left.classList.remove('none_active')
+        button_start.classList.remove('none_active')
+        this.classList.add('none_active')
+        buttom_right.classList.add('none_active')
+        position = -9754.5
+        mainDiv.style.top = position + 'px'
+        pageCount.textContent = 8
       }
     }
+
     if (document.documentElement.scrollWidth < 768) {
       let count = 3
 
@@ -1873,14 +1910,50 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
 
       buttom_right.onclick = function() {
         position -= topInit*count
-        if (position <= -(carts.length) * topInit) position = -20902.5
+        button_left.classList.remove('none_active')
+        button_start.classList.remove('none_active')
+        if (position <= -20902.5) {
+          position = -20902.5
+          pageCount.textContent = 16
+          this.classList.add('none_active')
+          buttom_end.classList.add('none_active')
+        }
         mainDiv.style.top = position + 'px'
+        pageCount.textContent++
       }
 
       button_left.onclick = function() {
         position += topInit*count
-        if (position > 0) position = 0
+        buttom_right.classList.remove('none_active')
+        buttom_end.classList.remove('none_active')
+        if (position > 0) {
+          position = 0
+          pageCount.textContent = 2
+          this.classList.add('none_active')
+          button_start.classList.add('none_active')
+        }
         mainDiv.style.top = position + 'px'
+        pageCount.textContent--
+      }
+
+      button_start.onclick = function() {
+        buttom_right.classList.remove('none_active')
+        buttom_end.classList.remove('none_active')
+        button_left.classList.add('none_active')
+        this.classList.add('none_active')
+        position = 0
+        mainDiv.style.top = position + 'px'
+        pageCount.textContent = 0
+      }
+
+      buttom_end.onclick = function() {
+        button_left.classList.remove('none_active')
+        button_start.classList.remove('none_active')
+        this.classList.add('none_active')
+        buttom_right.classList.add('none_active')
+        position = -20902.5
+        mainDiv.style.top = position + 'px'
+        pageCount.textContent = 8
       }
     }
 

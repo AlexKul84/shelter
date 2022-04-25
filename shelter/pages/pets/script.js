@@ -1724,12 +1724,15 @@ if (document.documentElement.scrollWidth >= 768 && document.documentElement.scro
     ]
     }
 
+    petsArray.sort(() => Math.random() - 0.5);
+
     let pets = []
 
     for(petsItem of petsArray) {
       petsItem.sort(() => Math.random() - 0.5);
       pets = pets.concat(petsItem)
     }
+
 
     let pets_slider_content = document.querySelector('.pets_slider_content')
 

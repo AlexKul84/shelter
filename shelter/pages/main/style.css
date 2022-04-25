@@ -1382,7 +1382,7 @@ html.open {
   height: 1024px;
   width: 320px;
   top: 0;
-  right: -10px;
+  right: -320px;
   transition: 0.5s;
 }
 

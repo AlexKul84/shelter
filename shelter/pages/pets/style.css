@@ -927,14 +927,14 @@ html.open {
   z-index: 0;
   height: 1024px;
   width: 320px;
-  top: -30px;
+  top: 0;
   right: -320px;
   transition: 0.5s;
 }
 
 .menu_container.open {
-  top: -30px;
-  height: 1024px;
+  top: 0;
+  height: 100%;
   right: -10px;
   z-index: 0;
 }

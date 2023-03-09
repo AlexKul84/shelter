@@ -1,2 +1,1 @@
-# alexkul84-JSFE2022Q1
-Private repository for @alexkul84
+Shelter - Учебный проект, созданный во время обучения в The Rolling Scopes School
